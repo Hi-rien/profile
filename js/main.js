@@ -89,8 +89,8 @@ $(window).on('scroll', function() {
     $('#menu').removeClass('fixed')
   }
 
+  // menu class 변경
   let sections = $('.event')
-
 
   for(let i = 0; i < sections.length; i++) {
     let sectionTop = sections.eq(i)
@@ -99,6 +99,20 @@ $(window).on('scroll', function() {
       $('#menu li').eq(i).find('a').addClass('active')
     }
   }
+})
+
+// menu click scroll
+
+$('#menu li a').click(function(e) {
+  e.preventDefault()
+
+  move = $(this).attr('href')
+  sectionTop = $(move).offset().top + 1 
+
+  $('html, body').animate({
+    scrollTop: sectionTop
+  },1000)
+  
 })
 
 
