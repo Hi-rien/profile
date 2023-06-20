@@ -127,6 +127,28 @@
     transform: translate(-50%, -10px);
   }
 }
+@-webkit-keyframes mobile {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes mobile {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 body {
   background-color: #000;
   font-family: "Black Han Sans", sans-serif;
@@ -515,6 +537,10 @@ body #section3 .inner #project .content_box .inner_box .content .github a {
   font-family: "Roboto";
   font-size: 24px;
 }
+body #section3 .inner #project .content_box .mobile.action {
+  -webkit-animation: mobile 1s ease;
+          animation: mobile 1s ease;
+}
 body #section3 .inner #project #lush {
   color: #111;
 }
@@ -691,4 +717,53 @@ body #section3 .inner #project #uniticket .content_box .backgound_box {
   background: linear-gradient(to top, #BCE6FF 0%, #FEFFE2 50%, #88CDF6 100%);
   opacity: 0.7;
   filter: blur(20px);
+}
+body #section3 .inner #project #uniticket .detail_box {
+  width: 100%;
+  display: flex;
+  padding: 80px 20px;
+  gap: 30px;
+}
+body #section3 .inner #project #uniticket .detail_box .left {
+  width: 100%;
+  height: 850px;
+}
+body #section3 .inner #project #uniticket .detail_box .left .reserve {
+  height: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding: 50px 0;
+  background: linear-gradient(to bottom, #FEFFE2 0%, #BCE6FF 100%);
+  border-radius: 10px;
+}
+body #section3 .inner #project #uniticket .detail_box .left .sub {
+  margin-top: 30px;
+  background: linear-gradient(to top, #FEFFE2 0%, #BCE6FF 100%);
+  border-radius: 10px;
+  padding: 50px 0;
+}
+body #section3 .inner #project #uniticket .detail_box .left .sub img {
+  display: block;
+  margin: 0 auto;
+}
+body #section3 .inner #project #uniticket .detail_box .left img {
+  width: 400px;
+  border-radius: 20px;
+}
+body #section3 .inner #project #uniticket .detail_box .main {
+  width: 100%;
+  background: linear-gradient(to top, #FEFFE2 0%, #BCE6FF 100%);
+  border-radius: 10px;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+body #section3 .inner #project #uniticket .detail_box .main img {
+  width: 400px;
+  border-radius: 20px;
 }/*# sourceMappingURL=main.css.map */

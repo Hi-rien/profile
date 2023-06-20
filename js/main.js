@@ -79,6 +79,14 @@ $('.section').waypoint(function() {
   offset: '50%'
 })
 
+// mobile 애니메이션
+
+$(".project_section").waypoint(function() {
+  $(this).find('.mobile').addClass('action')
+}, {
+  offset: "10%"
+})
+
 
 // menu fixed
 
