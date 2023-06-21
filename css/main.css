@@ -149,6 +149,166 @@
     transform: rotate(0);
   }
 }
+@-webkit-keyframes percent_css {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes percent_css {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@-webkit-keyframes percent_html {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes percent_html {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@-webkit-keyframes percent_jq {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes percent_jq {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@-webkit-keyframes percent_js {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes percent_js {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@-webkit-keyframes percent_php {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes percent_php {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@-webkit-keyframes percent_scss {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes percent_scss {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@-webkit-keyframes mobileAni1 {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(0, -50%) rotate(45deg);
+  }
+}
+@keyframes mobileAni1 {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(0, -50%) rotate(45deg);
+  }
+}
+@-webkit-keyframes mobileAni2 {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(-100%, -50%) rotate(-45deg);
+  }
+}
+@keyframes mobileAni2 {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(-100%, -50%) rotate(-45deg);
+  }
+}
+@-webkit-keyframes mobileAni3 {
+  0% {
+    transform: translate(0, -50%) rotate(45deg);
+  }
+  100% {
+    transform: translate(80%, -50%) rotate(0);
+  }
+}
+@keyframes mobileAni3 {
+  0% {
+    transform: translate(0, -50%) rotate(45deg);
+  }
+  100% {
+    transform: translate(80%, -50%) rotate(0);
+  }
+}
+@-webkit-keyframes mobileAni4 {
+  0% {
+    transform: translate(-100%, -50%) rotate(-45deg);
+  }
+  100% {
+    transform: translate(-180%, -50%) rotate(0);
+  }
+}
+@keyframes mobileAni4 {
+  0% {
+    transform: translate(-100%, -50%) rotate(-45deg);
+  }
+  100% {
+    transform: translate(-180%, -50%) rotate(0);
+  }
+}
 body {
   background-color: #000;
   font-family: "Black Han Sans", sans-serif;
@@ -445,6 +605,59 @@ body #section2 .slide_skill li a {
 body #section2 .slide_skill li a:hover {
   opacity: 1;
 }
+body #section2 #skillper {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  color: #fff;
+}
+body #section2 #skillper .name {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+body #section2 #skillper .percent {
+  margin-top: 20px;
+  width: 500px;
+}
+body #section2 #skillper .percent li {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+body #section2 #skillper .percent li p {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 30px;
+  background-color: #6947EF;
+}
+body #section2 #skillper .percent li:nth-child(1) p {
+  -webkit-animation: percent_css 1s ease both;
+          animation: percent_css 1s ease both;
+}
+body #section2 #skillper .percent li:nth-child(2) p {
+  -webkit-animation: percent_html 1s ease both;
+          animation: percent_html 1s ease both;
+}
+body #section2 #skillper .percent li:nth-child(3) p {
+  -webkit-animation: percent_jq 1s ease both;
+          animation: percent_jq 1s ease both;
+}
+body #section2 #skillper .percent li:nth-child(4) p {
+  -webkit-animation: percent_js 1s ease both;
+          animation: percent_js 1s ease both;
+}
+body #section2 #skillper .percent li:nth-child(5) p {
+  -webkit-animation: percent_php 1s ease both;
+          animation: percent_php 1s ease both;
+}
+body #section2 #skillper .percent li:nth-child(6) p {
+  -webkit-animation: percent_scss 1s ease both;
+          animation: percent_scss 1s ease both;
+}
 body #section3 {
   border-top: 1px solid #0a0a0a;
 }
@@ -465,6 +678,19 @@ body #section3 .inner header h2 {
 body #section3 .inner #project {
   width: 100%;
   background-color: #fbfaf8;
+}
+body #section3 .inner #project .header {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+body #section3 .inner #project .header .subject {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 28px;
+  color: #111;
 }
 body #section3 .inner #project .content_box {
   width: 100%;
@@ -544,11 +770,6 @@ body #section3 .inner #project .content_box .mobile.action {
 body #section3 .inner #project #lush {
   color: #111;
 }
-body #section3 .inner #project #lush .header {
-  width: 100%;
-  height: 400px;
-  position: relative;
-}
 body #section3 .inner #project #lush .header .lush_logo {
   position: absolute;
   top: 120px;
@@ -572,40 +793,68 @@ body #section3 .inner #project #lush .content .title p {
   font-family: "lush";
 }
 body #section3 .inner #project #lush .detail_box {
-  width: 100%;
-}
-body #section3 .inner #project #lush .detail_box ul {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
-  padding: 150px 0 150px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 100px;
+  margin-top: 50px;
 }
-body #section3 .inner #project #lush .detail_box ul li {
-  width: 220px;
-  height: 400px;
+body #section3 .inner #project #lush .detail_box img {
   border-radius: 10px;
-  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  cursor: pointer;
+  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.3);
 }
-body #section3 .inner #project #lush .detail_box ul li img {
+body #section3 .inner #project #lush .detail_box ul {
+  width: 100%;
+  height: 600px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.1);
+}
+body #section3 .inner #project #lush .detail_box ul span {
+  position: absolute;
+  left: 50px;
+  top: 0;
+  font-size: 48px;
+  transform: translateY(-50%);
+}
+body #section3 .inner #project #lush .detail_box .left {
+  background: linear-gradient(to bottom, #B4E8FA 0%, #FADCF6 100%);
+}
+body #section3 .inner #project #lush .detail_box .left li {
+  position: relative;
   width: 100%;
   height: 100%;
-  transition: all 0.5s;
+  overflow: hidden;
 }
-body #section3 .inner #project #lush .detail_box ul li img:hover {
-  transform: scale(1.07);
+body #section3 .inner #project #lush .detail_box .left li img {
+  width: 400px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body #section3 .inner #project #lush .detail_box .right {
+  display: flex;
+  background: linear-gradient(to top, #B4E8FA 0%, #FADCF6 100%);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+body #section3 .inner #project #lush .detail_box .right li img {
+  height: 400px;
+}
+body #section3 .inner #project #lush .detail_box .right li:last-child {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 body #section3 .inner #project #canon {
   width: 100%;
   color: #f7f9f8;
-}
-body #section3 .inner #project #canon .header {
-  width: 100%;
-  height: 400px;
-  position: relative;
 }
 body #section3 .inner #project #canon .header .canon_logo {
   position: absolute;
@@ -665,6 +914,19 @@ body #section3 .inner #project #canon .detail_box img {
 body #section3 .inner #project #canon .detail_box img:hover {
   transform: scale(1.07);
 }
+body #section3 .inner #project #canon .detail_box ul {
+  margin-top: 50px;
+  position: relative;
+}
+body #section3 .inner #project #canon .detail_box ul li:last-child {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  font-size: 48px;
+  box-shadow: none;
+  color: #111;
+  transform: translateY(-50%);
+}
 body #section3 .inner #project #canon .detail_box .phone {
   margin-left: 20px;
   width: 100%;
@@ -706,8 +968,6 @@ body #section3 .inner #project #uniticket {
   width: 100%;
 }
 body #section3 .inner #project #uniticket .header {
-  width: 100%;
-  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -720,50 +980,135 @@ body #section3 .inner #project #uniticket .content_box .backgound_box {
 }
 body #section3 .inner #project #uniticket .detail_box {
   width: 100%;
-  display: flex;
-  padding: 80px 20px;
-  gap: 30px;
+  margin-top: 50px;
 }
-body #section3 .inner #project #uniticket .detail_box .left {
-  width: 100%;
-  height: 850px;
-}
-body #section3 .inner #project #uniticket .detail_box .left .reserve {
-  height: 850px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-  padding: 50px 0;
-  background: linear-gradient(to bottom, #FEFFE2 0%, #BCE6FF 100%);
-  border-radius: 10px;
-}
-body #section3 .inner #project #uniticket .detail_box .left .sub {
-  margin-top: 30px;
-  background: linear-gradient(to top, #FEFFE2 0%, #BCE6FF 100%);
-  border-radius: 10px;
-  padding: 50px 0;
-}
-body #section3 .inner #project #uniticket .detail_box .left .sub img {
-  display: block;
+body #section3 .inner #project #uniticket .detail_box div {
+  width: 95%;
   margin: 0 auto;
-}
-body #section3 .inner #project #uniticket .detail_box .left img {
-  width: 400px;
-  border-radius: 20px;
-}
-body #section3 .inner #project #uniticket .detail_box .main {
-  width: 100%;
-  background: linear-gradient(to top, #FEFFE2 0%, #BCE6FF 100%);
+  position: relative;
   border-radius: 10px;
-  padding: 50px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 120px;
 }
-body #section3 .inner #project #uniticket .detail_box .main img {
-  width: 400px;
-  border-radius: 20px;
+body #section3 .inner #project #uniticket .detail_box div.main {
+  height: 600px;
+  background: linear-gradient(to top, #FEFFE2 0%, #88CDF6 100%);
+}
+body #section3 .inner #project #uniticket .detail_box div.main li {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body #section3 .inner #project #uniticket .detail_box div.main li img {
+  height: 450px;
+  border-radius: 10px;
+}
+body #section3 .inner #project #uniticket .detail_box div.main li.ani1 {
+  -webkit-animation: mobileAni1 1s ease both;
+          animation: mobileAni1 1s ease both;
+}
+body #section3 .inner #project #uniticket .detail_box div.main li.ani1.ani3 {
+  -webkit-animation: mobileAni3 1s 0.5s ease both;
+          animation: mobileAni3 1s 0.5s ease both;
+}
+body #section3 .inner #project #uniticket .detail_box div.main li.ani2 {
+  -webkit-animation: mobileAni2 1s ease both;
+          animation: mobileAni2 1s ease both;
+}
+body #section3 .inner #project #uniticket .detail_box div.main li.ani2.ani4 {
+  -webkit-animation: mobileAni4 1s 0.5s ease both;
+          animation: mobileAni4 1s 0.5s ease both;
+}
+body #section3 .inner #project #uniticket .detail_box div.main li:last-child {
+  position: absolute;
+  left: 100px;
+  top: 0;
+  font-size: 48px;
+  color: #111;
+}
+body #section3 .inner #project #uniticket .detail_box div.sub {
+  margin-top: 50px;
+  height: 900px;
+  width: 95%;
+  background: linear-gradient(to bottom, #FEFFE2 0%, #88CDF6 100%);
+  position: relative;
+}
+body #section3 .inner #project #uniticket .detail_box div.sub .card_3d {
+  width: 280px;
+  height: 450px;
+  perspective: 1000px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+body #section3 .inner #project #uniticket .detail_box div.sub .card_3d ul {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+body #section3 .inner #project #uniticket .detail_box div.sub .card_3d ul li {
+  position: absolute;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body #section3 .inner #project #uniticket .detail_box div.sub .card_3d ul li:nth-child(1) {
+  transform: rotateY(0deg) translateZ(250px);
+}
+body #section3 .inner #project #uniticket .detail_box div.sub .card_3d ul li:nth-child(2) {
+  transform: rotateY(60deg) translateZ(250px);
+}
+body #section3 .inner #project #uniticket .detail_box div.sub .card_3d ul li:nth-child(3) {
+  transform: rotateY(120deg) translateZ(250px);
+}
+body #section3 .inner #project #uniticket .detail_box div.sub .card_3d ul li:nth-child(4) {
+  transform: rotateY(180deg) translateZ(250px);
+}
+body #section3 .inner #project #uniticket .detail_box div.sub .card_3d ul li:nth-child(5) {
+  transform: rotateY(240deg) translateZ(250px);
+}
+body #section3 .inner #project #uniticket .detail_box div.sub .card_3d ul li:nth-child(6) {
+  transform: rotateY(300deg) translateZ(250px);
+}
+body #section3 .inner #project #uniticket .detail_box div.sub .card_3d ul li img {
+  height: 450px;
+}
+body #section3 .inner #project #uniticket .detail_box div.sub span {
+  position: absolute;
+  font-size: 32px;
+  cursor: pointer;
+}
+body #section3 .inner #project #uniticket .detail_box div.sub span.next {
+  right: 20%;
+}
+body #section3 .inner #project #uniticket .detail_box div.sub span.next::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: #111;
+  position: absolute;
+  top: 50%;
+  margin-left: 10px;
+}
+body #section3 .inner #project #uniticket .detail_box div.sub span.prev {
+  left: 20%;
+}
+body #section3 .inner #project #uniticket .detail_box div.sub span.prev::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: #111;
+  position: absolute;
+  top: 50%;
+  left: -60px;
+}
+body #section3 .inner #project #uniticket .detail_box div.sub p {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  font-size: 48px;
+  transform: translateY(-50%);
+  color: #111;
 }/*# sourceMappingURL=main.css.map */

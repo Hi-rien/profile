@@ -135,3 +135,56 @@ const ticker = function() {
   }, 3000);
 }
 ticker()
+
+// section2 skill per
+
+$('#skillper ul li:nth-child(1)~').stop().hide()
+
+$('#section2 input').click(function() {
+
+  num = $(this).index()
+  $('#skillper ul li').stop().hide()
+  $('#skillper .percent li').eq(num).stop().fadeIn()
+  $('#skillper .name li').eq(num).stop().show()
+})
+
+
+// uniticket animation
+$('#uniticket .detail_box .main').waypoint(() => {
+  $('#uniAni1').addClass('ani1')
+  $('#uniAni2').addClass('ani2')
+}, {
+  offset: "50%"
+})
+
+nuiAni1 = document.getElementById('uniAni1')
+nuiAni2 = document.getElementById('uniAni2')
+nuiAni1.addEventListener('animationend', function() {
+  this.classList.add('ani3')
+})
+nuiAni2.addEventListener('animationend', function() {
+  this.classList.add('ani4')
+})
+
+// uniticket 3d
+
+let carousel = $(".card_3d ul"),
+    currdeg  = 0;
+
+$(".next").on("click", { d: "n" }, rotate);
+$(".prev").on("click", { d: "p" }, rotate);
+
+function rotate(e){
+  if(e.data.d=="n"){
+    currdeg = currdeg - 60;
+  }
+  if(e.data.d=="p"){
+    currdeg = currdeg + 60;
+  }
+  carousel.css({
+    "-webkit-transform": "rotateY("+currdeg+"deg)",
+    "-moz-transform": "rotateY("+currdeg+"deg)",
+    "-o-transform": "rotateY("+currdeg+"deg)",
+    "transform": "rotateY("+currdeg+"deg)"
+  });
+}
