@@ -521,7 +521,7 @@ body #section1 .inner .about_box .inner_box {
 body #section1 #menu {
   position: absolute;
   top: 100px;
-  right: 3%;
+  right: 4%;
   z-index: 99;
 }
 body #section1 #menu.fixed {
@@ -537,7 +537,7 @@ body #section1 #menu ul li a {
   display: block;
   color: #f7f9f8;
   padding-bottom: 5px;
-  font-size: 28px;
+  font-size: 24px;
 }
 body #section1 #menu ul li a.active {
   color: #6947EF;
@@ -634,7 +634,7 @@ body #section2 #skillper .percent li p {
   height: 30px;
   background-color: #6947EF;
 }
-body #section2 #skillper .percent li:nth-child(1) p {
+body #section2 #skillper .percent li:nth-child(1) p.start {
   -webkit-animation: percent_css 1s ease both;
           animation: percent_css 1s ease both;
 }
@@ -679,6 +679,31 @@ body #section3 .inner #project {
   width: 100%;
   background-color: #fbfaf8;
 }
+body #section3 .inner #project #pdf_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  display: none;
+}
+body #section3 .inner #project #pdf_modal .close {
+  position: fixed;
+  right: 8%;
+  top: 10%;
+  cursor: pointer;
+}
+body #section3 .inner #project #pdf_modal .pdf_section {
+  margin: 0 auto;
+  width: 70%;
+  height: 100%;
+  background-color: #fff;
+}
+body #section3 .inner #project #pdf_modal .pdf_section object {
+  width: 100%;
+}
 body #section3 .inner #project .header {
   position: relative;
   width: 100%;
@@ -696,6 +721,14 @@ body #section3 .inner #project .content_box {
   width: 100%;
   height: 1000px;
   overflow: hidden;
+  position: relative;
+}
+body #section3 .inner #project .content_box .pdf_icon {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  z-index: 9;
+  cursor: pointer;
 }
 body #section3 .inner #project .content_box .backgound_box {
   position: absolute;
@@ -720,14 +753,28 @@ body #section3 .inner #project .content_box .inner_box .mobile {
 body #section3 .inner #project .content_box .inner_box .content {
   display: flex;
   flex-direction: column;
-  gap: 60px;
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='4' stroke-dasharray='17%2c 9%2c 6' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
   padding: 30px;
+}
+body #section3 .inner #project .content_box .inner_box .content .sub_name {
+  font-size: 32px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+body #section3 .inner #project .content_box .inner_box .content a {
+  margin-left: 20px;
+  color: #333;
+  font-family: "Roboto";
+  font-size: 22px;
 }
 body #section3 .inner #project .content_box .inner_box .content .title {
   display: flex;
   gap: 20px;
   align-items: center;
+  margin-bottom: 40px;
 }
 body #section3 .inner #project .content_box .inner_box .content .title .home_icon {
   width: 80px;
@@ -735,16 +782,15 @@ body #section3 .inner #project .content_box .inner_box .content .title .home_ico
 body #section3 .inner #project .content_box .inner_box .content .title p {
   font-size: 48px;
 }
-body #section3 .inner #project .content_box .inner_box .content .skills p {
-  font-size: 32px;
-  margin-bottom: 10px;
+body #section3 .inner #project .content_box .inner_box .content .skills {
+  margin-bottom: 20px;
 }
 body #section3 .inner #project .content_box .inner_box .content .skills .skill {
   margin-left: 20px;
   width: 500px;
   display: flex;
   flex-wrap: wrap;
-  font-size: 24px;
+  font-size: 22px;
   font-family: "Roboto";
   -moz-column-gap: 50px;
        column-gap: 50px;
@@ -753,15 +799,8 @@ body #section3 .inner #project .content_box .inner_box .content .skills .skill l
   text-align: left;
   margin-bottom: 10px;
 }
-body #section3 .inner #project .content_box .inner_box .content .github p {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-body #section3 .inner #project .content_box .inner_box .content .github a {
-  margin-left: 20px;
-  color: #333;
-  font-family: "Roboto";
-  font-size: 24px;
+body #section3 .inner #project .content_box .inner_box .content .github {
+  margin-bottom: 20px;
 }
 body #section3 .inner #project .content_box .mobile.action {
   -webkit-animation: mobile 1s ease;
@@ -769,6 +808,7 @@ body #section3 .inner #project .content_box .mobile.action {
 }
 body #section3 .inner #project #lush {
   color: #111;
+  padding-bottom: 50px;
 }
 body #section3 .inner #project #lush .header .lush_logo {
   position: absolute;
@@ -799,7 +839,6 @@ body #section3 .inner #project #lush .detail_box {
   align-items: center;
   justify-content: center;
   gap: 50px;
-  margin-bottom: 100px;
   margin-top: 50px;
 }
 body #section3 .inner #project #lush .detail_box img {
@@ -855,6 +894,7 @@ body #section3 .inner #project #lush .detail_box .right li:last-child {
 body #section3 .inner #project #canon {
   width: 100%;
   color: #f7f9f8;
+  margin-bottom: 50px;
 }
 body #section3 .inner #project #canon .header .canon_logo {
   position: absolute;
@@ -966,6 +1006,7 @@ body #section3 .inner #project #canon .detail_box .pc li img {
 }
 body #section3 .inner #project #uniticket {
   width: 100%;
+  margin-bottom: 50px;
 }
 body #section3 .inner #project #uniticket .header {
   display: flex;
@@ -1007,8 +1048,8 @@ body #section3 .inner #project #uniticket .detail_box div.main li.ani1 {
           animation: mobileAni1 1s ease both;
 }
 body #section3 .inner #project #uniticket .detail_box div.main li.ani1.ani3 {
-  -webkit-animation: mobileAni3 1s 0.5s ease both;
-          animation: mobileAni3 1s 0.5s ease both;
+  -webkit-animation: mobileAni3 1s ease both;
+          animation: mobileAni3 1s ease both;
 }
 body #section3 .inner #project #uniticket .detail_box div.main li.ani2 {
   -webkit-animation: mobileAni2 1s ease both;

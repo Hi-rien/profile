@@ -140,6 +140,13 @@ ticker()
 
 $('#skillper ul li:nth-child(1)~').stop().hide()
 
+$('#section2').waypoint(function() {
+  $('.percent li:nth-child(1) p').addClass('start')
+}, {
+  offset: "40%"
+})
+
+
 $('#section2 input').click(function() {
 
   num = $(this).index()
@@ -188,3 +195,29 @@ function rotate(e){
     "transform": "rotateY("+currdeg+"deg)"
   });
 }
+
+function lushOpen() {
+   win = window.open("http://rien.dothome.co.kr/mobile/mobile_shr.html","pf","toolbar=no,location=no,status=no,menubar=no,resizable=no,scrollbars=yes,width=400, height=720,left=800,top=150")
+}
+
+function canonOpen() {
+  win = window.open("http://rien2.dothome.co.kr/newcanon")
+}
+
+function uniOpen() {
+  win = window.open("http://uniticket.dothome.co.kr/uniticket","pf","toolbar=no,location=no,status=no,menubar=no,resizable=no,scrollbars=yes,width=400, height=720,left=800,top=150")
+}
+
+$('.pdf_icon').click(function() {
+  $('#pdf_modal').stop().show()
+  $('body').css({
+    overflow: 'hidden'
+  })
+})
+
+$('#pdf_modal .close').click(function() {
+  $('#pdf_modal').stop().hide()
+  $('body').css({
+    overflow: 'auto'
+  })
+})
