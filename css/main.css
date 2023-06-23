@@ -413,14 +413,14 @@ body #shooting_star #str3 {
   transform-origin: center;
 }
 body #shooting_star #str12 {
-  -webkit-animation: blink 4s ease-in-out alternate infinite;
-          animation: blink 4s ease-in-out alternate infinite;
+  -webkit-animation: blink 3s ease-in-out alternate infinite;
+          animation: blink 3s ease-in-out alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str2 {
-  -webkit-animation: blink 4s ease-in-out alternate infinite;
-          animation: blink 4s ease-in-out alternate infinite;
+  -webkit-animation: blink 3s ease-in-out alternate infinite;
+          animation: blink 3s ease-in-out alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
@@ -428,8 +428,8 @@ body #shooting_star #shooting2 {
   opacity: 0;
   transform-box: fill-box;
   transform-origin: center;
-  -webkit-animation: shooting 7s ease-in-out infinite;
-          animation: shooting 7s ease-in-out infinite;
+  -webkit-animation: shooting 6s ease-in-out infinite;
+          animation: shooting 6s ease-in-out infinite;
 }
 body #shooting_star #tree {
   transform-box: fill-box;
@@ -441,7 +441,7 @@ body .gap {
   height: 30vh;
 }
 body .inner {
-  max-width: 1400px;
+  max-width: 75%;
   height: 100%;
   border-left: 1px solid #111;
   border-right: 1px solid #111;
@@ -497,9 +497,9 @@ body #section1 .line.line2.show {
 }
 body #section1 .inner .about_box {
   position: absolute;
-  top: 200px;
-  right: 100px;
-  width: 1000px;
+  top: 20%;
+  right: 8%;
+  width: 65%;
   height: 500px;
   border-radius: 20px;
   background: linear-gradient(0.8turn, #000 0%, #0a0a0a 50%, #000 100%);
@@ -510,13 +510,20 @@ body #section1 .inner .about_box {
 }
 body #section1 .inner .about_box .inner_box {
   position: absolute;
-  top: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 460px;
-  left: 20px;
-  width: 960px;
+  width: 95%;
   border-radius: 5px;
   border: 1px solid #6947EF;
   background-color: #000;
+  color: #fff;
+  padding: 50px;
+}
+body #section1 .inner .about_box .inner_box .hello {
+  font-size: 48px;
+  letter-spacing: 2px;
 }
 body #section1 #menu {
   position: absolute;
@@ -565,6 +572,17 @@ body #section1 #menu ul li a::after {
 }
 body #section1 #menu ul li a:hover::after {
   width: 100%;
+}
+body #section1 #fixed_git {
+  position: absolute;
+  bottom: 20px;
+  right: 8%;
+}
+body #section1 #fixed_git img {
+  width: 50px;
+}
+body #section1 #fixed_git.fixed {
+  position: fixed;
 }
 body #section2 .line3 {
   width: 1300px;
@@ -658,22 +676,21 @@ body #section2 #skillper .percent li:nth-child(6) p {
   -webkit-animation: percent_scss 1s ease both;
           animation: percent_scss 1s ease both;
 }
-body #section3 {
-  border-top: 1px solid #0a0a0a;
-}
-body #section3 .inner header {
+body header {
   width: 100%;
   font-size: 64px;
   height: 450px;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 100px;
 }
-body #section3 .inner header h2 {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 50px;
+body header h2 {
   text-shadow: 0 0 2px #fff;
   letter-spacing: 30px;
+}
+body #section3 {
+  border-top: 1px solid #0a0a0a;
 }
 body #section3 .inner #project {
   width: 100%;
@@ -700,9 +717,12 @@ body #section3 .inner #project #pdf_modal .pdf_section {
   width: 70%;
   height: 100%;
   background-color: #fff;
+  overflow: auto;
 }
-body #section3 .inner #project #pdf_modal .pdf_section object {
-  width: 100%;
+body #section3 .inner #project #pdf_modal .pdf_section img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
 }
 body #section3 .inner #project .header {
   position: relative;
@@ -748,21 +768,23 @@ body #section3 .inner #project .content_box .inner_box {
   gap: 15%;
 }
 body #section3 .inner #project .content_box .inner_box .mobile {
-  width: 350px;
+  width: 20%;
 }
 body #section3 .inner #project .content_box .inner_box .content {
   display: flex;
   flex-direction: column;
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='4' stroke-dasharray='17%2c 9%2c 6' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
-  padding: 30px;
+  padding: 2%;
 }
 body #section3 .inner #project .content_box .inner_box .content .sub_name {
   font-size: 32px;
   margin-bottom: 10px;
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+body #section3 .inner #project .content_box .inner_box .content .sub_name.page_open {
+  cursor: pointer;
 }
 body #section3 .inner #project .content_box .inner_box .content a {
   margin-left: 20px;
@@ -806,6 +828,32 @@ body #section3 .inner #project .content_box .mobile.action {
   -webkit-animation: mobile 1s ease;
           animation: mobile 1s ease;
 }
+body #section3 .inner #project .content_box .list {
+  position: absolute;
+  top: 220px;
+  right: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+body #section3 .inner #project .content_box .list li {
+  position: relative;
+}
+body #section3 .inner #project .content_box .list li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #6947EF;
+  border-radius: 50%;
+  opacity: 0.4;
+  top: -5px;
+  left: -10px;
+}
 body #section3 .inner #project #lush {
   color: #111;
   padding-bottom: 50px;
@@ -821,7 +869,7 @@ body #section3 .inner #project #lush .header .img1 {
   width: 200px;
   position: absolute;
   top: 40px;
-  right: 430px;
+  right: 30%;
 }
 body #section3 .inner #project #lush .header .img2 {
   position: absolute;
@@ -917,6 +965,9 @@ body #section3 .inner #project #canon .header .line.line2 {
 }
 body #section3 .inner #project #canon .content_box {
   background-color: #000;
+}
+body #section3 .inner #project #canon .content_box .list {
+  right: 280px;
 }
 body #section3 .inner #project #canon .content_box .backgound_box {
   background-size: cover;
@@ -1152,4 +1203,58 @@ body #section3 .inner #project #uniticket .detail_box div.sub p {
   font-size: 48px;
   transform: translateY(-50%);
   color: #111;
+}
+body #section4 .edu {
+  margin-top: 50px;
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Roboto";
+  color: #fff;
+}
+body #section4 .edu li h5 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 30px;
+}
+body #section4 .edu li .box {
+  margin-top: 20px;
+  width: 550px;
+  height: 150px;
+  border: 1px solid #fff;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+body #section4 .edu li .box p {
+  padding-left: 30px;
+}
+body #section5 {
+  margin-bottom: 100px;
+}
+body #section5 .inner {
+  padding: 0 50px;
+}
+body #section5 .inner .content_box {
+  width: 100%;
+  height: 350px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20%;
+  color: #fff;
+  font-family: "Roboto";
+}
+body #section5 .inner .content_box .left {
+  font-size: 36px;
+}
+body #section5 .inner .content_box .right li {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }/*# sourceMappingURL=main.css.map */

@@ -85,9 +85,15 @@
       </ul>
     </nav>
 
+    <div id="fixed_git">
+      <a href="https://github.com/Hi-rien"><img src="./img/github_wh.png" alt="깃헙"></a>
+    </div>
+
     <div class="inner">
       <div class="about_box">
-        <div class="inner_box"></div>
+        <div class="inner_box">
+          <p class="hello">HELLO!</p>
+        </div>
       </div>
     </div>
   </section>
@@ -173,19 +179,20 @@
 
       <div id="project">
 
-        <div id="uniticket" class="project_section">
-          <div id="pdf_modal">
-            <img src="./img/close_icon.png" class="close">
-            <div class="pdf_section">
-
-            </div>
+        <div id="pdf_modal">
+          <img src="./img/close_icon.png" class="close">
+          <div class="pdf_section">
+            <img src="./img/pdf_uniticket.png" alt="기획서">
           </div>
+        </div>
+
+        <div id="uniticket" class="project_section">
           <div class="header">
             <img src="./img/uniticket/uniticket_logo.png" alt="유니티켓 로고">
             <span class="subject">"모두를 위한 티켓팅"</span>
           </div>
           <div class="content_box">
-            <img src="./img/pdf_icon.png" alt="pdf" class="pdf_icon">
+            <img src="./img/pdf_icon.png" alt="pdf" class="pdf_icon" data-pdf="uniticket">
             <div class="backgound_box"></div>
             <div class="inner_box">
               <img src="./img/uniticket/uniticket_mobile.png" alt="유니티켓 모바일 이미지" class="mobile">
@@ -213,6 +220,11 @@
                 </div>
               </div>
             </div>
+            <ul class="list">
+              <li>팀 프로젝트</li>
+              <li>Mobile</li>
+              <li>리팩토링 예정</li>
+            </ul>
           </div>
           <div class="detail_box">
             <div class="main">
@@ -249,7 +261,7 @@
             <span class="subject">"카메라로 보는 세상"</span>
           </div>
           <div class="content_box">
-            <img src="./img/pdf_wh_icon.png" alt="pdf" class="pdf_icon">
+            <img src="./img/pdf_wh_icon.png" alt="pdf" class="pdf_icon" data-pdf="canon">
             <div class="backgound_box"></div>
             <div class="inner_box">
               <img src="./img/canon/canon_mobile01.png" alt="캐논 모바일 이미지" class="mobile">
@@ -277,6 +289,11 @@
                 </div>
               </div>
             </div>
+            <ul class="list">
+              <li>개인 프로젝트</li>
+              <li>Responsive Web</li>
+              <li>리팩토링 예정</li>
+            </ul>
           </div>
           <div class="detail_box">
             <ul class="phone">
@@ -303,7 +320,7 @@
             <span class="subject">"믿을 수 있는 제품 LUSH"</span>
           </div>
           <div class="content_box">
-            <img src="./img/pdf_icon.png" alt="pdf" class="pdf_icon">
+            <img src="./img/pdf_icon.png" alt="pdf" class="pdf_icon" data-pdf="lush">
             <div class="backgound_box"></div>
             <div class="inner_box">
               <img src="./img/lush/lush_iphone.png" alt="러쉬 모바일 이미지" class="mobile">
@@ -328,10 +345,15 @@
                   <a href="https://github.com/Hi-rien/lush" target="_blank">https://github.com/Hi-rien/lush</a>
                 </div>
                 <div class="view">
-                  <p class="sub_name" onclick="lushOpen();" title="러쉬 보러 가기"><span>View</span><img src="./img/arrow_icon.png" alt=""></p>
+                  <p class="sub_name page_open" onclick="lushOpen();" title="러쉬 보러 가기"><span>View</span><img src="./img/arrow_icon.png" alt=""></p>
                 </div>
               </div>
             </div>
+            <ul class="list">
+              <li>개인 프로젝트</li>
+              <li>Mobile</li>
+              <li>리팩토링 예정</li>
+            </ul>
           </div>
           <div class="detail_box">
             <ul class="left">
@@ -349,7 +371,61 @@
       </div>
     </div>
   </section>
-  <section id="section4" class="section2 event"></section>
+  <section id="section4" class="section2 event">
+    <div class="inner">
+      <header>
+        <h2>EDUCATION</h2>
+      </header>
+
+      <ul class="edu">
+        <li>
+          <h5>그린컴퓨터아카데미</h5>
+          <div class="box">
+            <p>2023.02.06 - 2023.08.10</p>
+            <p>UI/UX 디자인 웹퍼블리셔 & 프론트엔드(React)IT 개발자 과정</p>
+          </div>
+        </li>
+        <li>
+          <h5>패스트캠퍼스</h5>
+          <div class="box">
+            <p>한번에 끝내는 프론트엔드 개발 초격차 패키지 Online</p>
+            <p>21개 프로젝트로 완성하는 인터랙티브 웹 개발 with Tree.js & Canvas</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="section5" class="section2 event">
+    <div class="inner">
+      <header>
+        <h2>THANK YOU</h2>
+      </header>
+      <div class="content_box">
+        <div class="left">
+          <p>Thank you for watching!</p>
+        </div>
+        <ul class="right">
+          <li>
+            <img src="./img/email_icon.png" alt="email">
+            <span>098sung@hanmail.net</span>
+          </li>
+          <li>
+            <img src="./img//phone_icon.png" alt="phone">
+            <span>010-9949-0844</span>
+          </li>
+          <li>
+            <img src="./img/githun_icon.png" alt="github">
+            <span>https://github.com/Hi-rien</span>
+          </li>
+          <li>
+            <img src="./img/location_icon.png" alt="location">
+            <span>경기도 고양시</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
 </body>
 

@@ -93,8 +93,10 @@ $(".project_section").waypoint(function() {
 $(window).on('scroll', function() {
   if(window.scrollY > $('#section1').offset().top) {
     $('#menu').addClass('fixed')
+    $('#fixed_git').addClass('fixed')
   } else {
     $('#menu').removeClass('fixed')
+    $('#fixed_git').removeClass('fixed')
   }
 
   // menu class 변경
@@ -196,6 +198,8 @@ function rotate(e){
   });
 }
 
+// 포폴 페이지 오픈
+
 function lushOpen() {
    win = window.open("http://rien.dothome.co.kr/mobile/mobile_shr.html","pf","toolbar=no,location=no,status=no,menubar=no,resizable=no,scrollbars=yes,width=400, height=720,left=800,top=150")
 }
@@ -208,7 +212,13 @@ function uniOpen() {
   win = window.open("http://uniticket.dothome.co.kr/uniticket","pf","toolbar=no,location=no,status=no,menubar=no,resizable=no,scrollbars=yes,width=400, height=720,left=800,top=150")
 }
 
+// pdf 모달창
+
 $('.pdf_icon').click(function() {
+  let pdfName = $(this).data('pdf')
+  console.log(pdfName)
+
+  $('.pdf_section img').attr('src', `./img/pdf_${pdfName}.png`)
   $('#pdf_modal').stop().show()
   $('body').css({
     overflow: 'hidden'
