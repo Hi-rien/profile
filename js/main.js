@@ -148,6 +148,25 @@ $('#section2').waypoint(function() {
   offset: "40%"
 })
 
+// section1 waypoint
+
+$('#section1').waypoint(function() {
+  $('#section1 .name').addClass('active')
+  $('#section1 .desc').addClass('active')
+}, {
+  offset: "75%"
+})
+
+// lush detailbox
+
+$('#lush .detail_box').waypoint(function() {
+  $('#lush .left img').addClass('active')
+  $('#lush .right img').addClass('active')
+}, {
+  offset: "75%"
+})
+
+// section2 skill
 
 $('#section2 input').click(function() {
 
