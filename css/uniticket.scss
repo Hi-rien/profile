@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+    #pdf_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 99;
+    display: none;
+    .close {
+      position: fixed;
+      right: 8%;
+      top: 10%;
+      cursor: pointer;
+    }
+    .pdf_section {
+      margin: 0 auto;
+      width: 70%;
+      height: 100%;
+      background-color: #fff;
+      overflow: auto;
+      &::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #6947EF;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+      }
+      img {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  #project {
+    background-color: #9AD4F2;
+
+    .inner {
+      position: relative;
+      max-width: 1400px;
+      height: 100vh;
+      margin: 0 auto;
+
+      .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top,
+            #BCE6FF 0%,
+            #FEFFE2 50%,
+            #88CDF6 100%);
+        filter: blur(20px);
+      }
+
+      .contents {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        header {
+          display: flex;
+          align-items: center;
+          gap: 100px;
+
+          img {
+            width: 340px;
+          }
+
+          span {
+            font-size: 32px;
+            font-weight: bold;
+          }
+        }
+
+        .box {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          gap: 2%;
+
+          .left {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10%;
+
+            .main_img {
+              img {
+                width: 350px;
+              }
+            }
+
+            .desc_box {
+              display: flex;
+              flex-direction: column;
+              gap: 30px;
+
+              .sub_name {
+                font-weight: bold;
+                font-size: 32px;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                font-family: 'Black Han Sans', sans-serif;
+
+                &.page_open {
+                  cursor: pointer;
+                }
+              }
+
+              .title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 40px;
+                font-size: 28px;
+                font-weight: bold;
+                font-family: 'Black Han Sans', sans-serif;
+
+                .home_icon {
+                  width: 50px;
+                }
+
+                .pdf_icon {
+                  width: 40px;
+                  cursor: pointer;
+                }
+              }
+
+              .skills {
+                margin-bottom: 20px;
+
+                .skill {
+                  color: #333;
+                  margin-left: 20px;
+                  width: 300px;
+                  display: flex;
+                  flex-wrap: wrap;
+                  font-size: 22px;
+                  font-family: "Roboto";
+                  column-gap: 50px;
+                  font-weight: bold;
+
+                  li {
+                    text-align: left;
+                    margin-bottom: 10px;
+                  }
+                }
+              }
+
+              .github {
+                a {
+                  margin-left: 20px;
+                  color: #333;
+                  font-family: "Roboto";
+                  font-size: 22px;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+
+          .right {
+            width: 40%;
+
+            .scroll {
+              width: 450px;
+              height: 100vh;
+              background-color: #CAEDFF;
+              position: absolute;
+              top: 0;
+              box-shadow: 4px 4px 10px rgba(0, 0, 0, .3);
+              overflow: auto;
+              display: flex;
+              gap: 50px;
+              flex-direction: column;
+              padding: 50px 20px;
+
+              &::-webkit-scrollbar {
+                width: 10px;
+              }
+
+              &::-webkit-scrollbar-thumb {
+                background-color: #88CDF6;
+              }
+
+              &::-webkit-scrollbar-track {
+                background-color: #f1f1f1;
+              }
+              img {
+                width: 300px;
+                border-radius: 10px;
+                box-shadow: 3px 3px 6px rgba(0, 0, 0, .4);
+                &:nth-child(odd) {
+                  align-self: flex-end;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

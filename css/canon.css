@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "canon";
+  src: url("../font/CANON.woff") format("woff");
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+}
+body #pdf_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  display: none;
+}
+body #pdf_modal .close {
+  position: fixed;
+  right: 8%;
+  top: 10%;
+  cursor: pointer;
+}
+body #pdf_modal .pdf_section {
+  margin: 0 auto;
+  width: 70%;
+  height: 100%;
+  background-color: #fff;
+  overflow: auto;
+}
+body #pdf_modal .pdf_section::-webkit-scrollbar {
+  width: 10px;
+}
+body #pdf_modal .pdf_section::-webkit-scrollbar-thumb {
+  background-color: #6947EF;
+}
+body #pdf_modal .pdf_section::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+body #pdf_modal .pdf_section img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+body #project {
+  background-color: #0C1F3B;
+}
+body #project .inner {
+  position: relative;
+  max-width: 1400px;
+  height: 100vh;
+  margin: 0 auto;
+}
+body #project .inner .back {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/canon/background.jpg");
+  background-size: cover;
+}
+body #project .inner .contents {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body #project .inner .contents header {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding-left: 30px;
+  letter-spacing: 1px;
+}
+body #project .inner .contents header h1 {
+  font-size: 64px;
+  font-family: "canon";
+}
+body #project .inner .contents header h1 span {
+  color: #cd2327;
+  font-size: 64px;
+}
+body #project .inner .contents header span {
+  font-size: 32px;
+  font-weight: bold;
+}
+body #project .inner .contents .box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+body #project .inner .contents .box .left {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8%;
+  padding-left: 20px;
+}
+body #project .inner .contents .box .left .main_img img {
+  width: 350px;
+}
+body #project .inner .contents .box .left .desc_box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+body #project .inner .contents .box .left .desc_box .sub_name {
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+body #project .inner .contents .box .left .desc_box .sub_name.page_open {
+  cursor: pointer;
+}
+body #project .inner .contents .box .left .desc_box .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Black Han Sans", sans-serif;
+}
+body #project .inner .contents .box .left .desc_box .title .home_icon {
+  width: 50px;
+}
+body #project .inner .contents .box .left .desc_box .title p {
+  font-family: "canon";
+  letter-spacing: 1px;
+}
+body #project .inner .contents .box .left .desc_box .title p span {
+  color: #cd2327;
+}
+body #project .inner .contents .box .left .desc_box .title .pdf_icon {
+  width: 40px;
+  cursor: pointer;
+}
+body #project .inner .contents .box .left .desc_box .skills {
+  margin-bottom: 20px;
+}
+body #project .inner .contents .box .left .desc_box .skills .skill {
+  margin-left: 20px;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 22px;
+  font-family: "Roboto";
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  font-weight: bold;
+}
+body #project .inner .contents .box .left .desc_box .skills .skill li {
+  text-align: left;
+  margin-bottom: 10px;
+}
+body #project .inner .contents .box .left .desc_box .github a {
+  margin-left: 20px;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: bold;
+}
+body #project .inner .contents .box .right {
+  width: 35%;
+}
+body #project .inner .contents .box .right .scroll {
+  width: 450px;
+  height: 100vh;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  padding: 50px 20px;
+}
+body #project .inner .contents .box .right .scroll::-webkit-scrollbar {
+  width: 10px;
+}
+body #project .inner .contents .box .right .scroll::-webkit-scrollbar-thumb {
+  background-color: #cd2327;
+}
+body #project .inner .contents .box .right .scroll::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+body #project .inner .contents .box .right .scroll .mobile {
+  width: 250px;
+}
+body #project .inner .contents .box .right .scroll .mobile:nth-child(2) {
+  align-self: flex-end;
+}
+body #project .inner .contents .box .right .scroll .pc {
+  width: 350px;
+  align-self: center;
+}/*# sourceMappingURL=canon.css.map */

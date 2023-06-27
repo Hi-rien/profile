@@ -79,13 +79,6 @@ $('.section').waypoint(function() {
   offset: '50%'
 })
 
-// mobile 애니메이션
-
-$(".project_section").waypoint(function() {
-  $(this).find('.mobile').addClass('action')
-}, {
-  offset: "10%"
-})
 
 
 // menu fixed
@@ -157,14 +150,6 @@ $('#section1').waypoint(function() {
   offset: "75%"
 })
 
-// lush detailbox
-
-$('#lush .detail_box').waypoint(function() {
-  $('#lush .left img').addClass('active')
-  $('#lush .right img').addClass('active')
-}, {
-  offset: "75%"
-})
 
 // section2 skill
 
@@ -177,76 +162,12 @@ $('#section2 input').click(function() {
 })
 
 
-// uniticket animation
-$('#uniticket .detail_box .main').waypoint(() => {
-  $('#uniAni1').addClass('ani1')
-  $('#uniAni2').addClass('ani2')
-}, {
-  offset: "50%"
-})
 
-nuiAni1 = document.getElementById('uniAni1')
-nuiAni2 = document.getElementById('uniAni2')
-nuiAni1.addEventListener('animationend', function() {
-  this.classList.add('ani3')
-})
-nuiAni2.addEventListener('animationend', function() {
-  this.classList.add('ani4')
-})
-
-// uniticket 3d
-
-let carousel = $(".card_3d ul"),
-    currdeg  = 0;
-
-$(".next").on("click", { d: "n" }, rotate);
-$(".prev").on("click", { d: "p" }, rotate);
-
-function rotate(e){
-  if(e.data.d=="n"){
-    currdeg = currdeg - 60;
-  }
-  if(e.data.d=="p"){
-    currdeg = currdeg + 60;
-  }
-  carousel.css({
-    "-webkit-transform": "rotateY("+currdeg+"deg)",
-    "-moz-transform": "rotateY("+currdeg+"deg)",
-    "-o-transform": "rotateY("+currdeg+"deg)",
-    "transform": "rotateY("+currdeg+"deg)"
-  });
-}
 
 // 포폴 페이지 오픈
 
-function lushOpen() {
-   win = window.open("http://rien.dothome.co.kr/mobile/mobile_shr.html","pf","toolbar=no,location=no,status=no,menubar=no,resizable=no,scrollbars=yes,width=400, height=720,left=800,top=150")
-}
 
-function canonOpen() {
-  win = window.open("http://rien2.dothome.co.kr/newcanon")
-}
 
-function uniOpen() {
-  win = window.open("http://uniticket.dothome.co.kr/uniticket","pf","toolbar=no,location=no,status=no,menubar=no,resizable=no,scrollbars=yes,width=400, height=720,left=800,top=150")
-}
 
-// pdf 모달창
 
-$('.pdf_icon').click(function() {
-  let pdfName = $(this).data('pdf')
-  console.log(pdfName)
 
-  $('.pdf_section img').attr('src', `./img/pdf_${pdfName}.png`)
-  $('#pdf_modal').stop().show()
-  $('body').css({
-    overflow: 'hidden'
-  })
-})
-
-$('#pdf_modal .close').click(function() {
-  $('#pdf_modal').stop().hide()
-  $('body').css({
-    overflow: 'auto'
-  })
-})

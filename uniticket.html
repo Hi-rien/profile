@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="rien_portfolio" />
+  <meta property="og:title" content="rien_portfolio" />
+  <meta property="og:description" content="개인 포트폴리오 페이지 입니다." />
+
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/uniticket.css">
+
+  <script src="./js/jquery-1.11.2.min.js"></script>
+  <script defer src="./js/common.js"></script>
+
+  <title>rien_portfolio</title>
+
+</head>
+<body>
+
+  <div id="pdf_modal">
+    <img src="./img/close_icon.png" class="close">
+    <div class="pdf_section">
+      <img src="./img/pdf_uniticket.png" alt="기획서">
+    </div>
+  </div>
+
+  <div id="project">
+    <div class="inner">
+      <div class="back"></div>
+      <div class="contents">
+        <header>
+          <img src="./img/uniticket/uniticket_logo.png" alt="유니티켓 로고">
+          <span>"모두를 위한 티켓팅"</span>
+        </header>
+        <div class="box">
+          <section class="left">
+            <div class="main_img">
+              <img src="./img/uniticket/uniticket_mobile.png" alt="러쉬 메인이미지">
+            </div>
+            <div class="desc_box">
+              <div class="title">
+                <img src="./img/uniticket/uniticket_icon.png" alt="캐논아이콘" class="home_icon">
+                <p>Uniticket</p>
+                <img src="./img/pdf_icon.png" alt="pdf" class="pdf_icon">
+              </div>
+              <div class="skills">
+                <p class="sub_name">skills</p>
+                <ul class="skill">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Jquery</li>
+                  <li>PHP</li>
+                  <li>Figma</li>
+                </ul>
+              </div>
+              <div class="github">
+                <p class="sub_name">github</p>
+                <a href="https://github.com/Hi-rien/uniticket" target="_blank">https://github.com/Hi-rien/uniticket</a>
+              </div>
+              <div class="view">
+                <p class="sub_name page_open" onclick="uniOpen();" title="유니티켓 보러 가기"><span>View</span> <img src="./img/arrow_icon.png" alt=""></p>
+              </div>
+            </div>
+          </section>
+          <section class="right">
+            <div class="scroll">
+              <img src="./img/uniticket/main1.jpg" alt="uniticket">
+              <img src="./img/uniticket/main2.jpg" alt="uniticket">
+              <img src="./img/uniticket/main3.jpg" alt="uniticket">
+              <img src="./img/uniticket/reserve1.jpg" alt="uniticket">
+              <img src="./img/uniticket/reserve2.jpg" alt="uniticket">
+              <img src="./img/uniticket/reserve3.jpg" alt="uniticket">
+              <img src="./img/uniticket/reserve4.jpg" alt="uniticket">
+            </div>
+          </section>
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    function uniOpen() {
+  win = window.open("http://uniticket.dothome.co.kr/uniticket","pf","toolbar=no,location=no,status=no,menubar=no,resizable=no,scrollbars=yes,width=400, height=720,left=800,top=150")
+}
+  </script>
+  
+</body>
+</html>

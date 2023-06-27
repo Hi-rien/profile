@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="rien_portfolio" />
+  <meta property="og:title" content="rien_portfolio" />
+  <meta property="og:description" content="개인 포트폴리오 페이지 입니다." />
+
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/canon.css">
+
+  <script src="./js/jquery-1.11.2.min.js"></script>
+  <script defer src="./js/common.js"></script>
+
+  <title>rien_portfolio</title>
+
+</head>
+<body>
+
+  <div id="pdf_modal">
+    <img src="./img/close_icon.png" class="close">
+    <div class="pdf_section">
+      <img src="./img/pdf_canon.png" alt="기획서">
+    </div>
+  </div>
+
+  <div id="project">
+    <div class="inner">
+      <div class="back"></div>
+      <div class="contents">
+        <header>
+          <h1>C<span>a</span>non</h1>
+          <span>"카메라로 보는 세상"</span>
+        </header>
+        <div class="box">
+          <section class="left">
+            <div class="main_img">
+              <img src="./img/canon/canon_mobile01.png" alt="캐논 메인이미지">
+            </div>
+            <div class="desc_box">
+              <div class="title">
+                <img src="./img/canon/canon_logo2.png" alt="캐논아이콘" class="home_icon">
+                <p>C<span>a</span>non </p>
+                <img src="./img/pdf_wh_icon.png" alt="pdf" class="pdf_icon">
+              </div>
+              <div class="skills">
+                <p class="sub_name">skills</p>
+                <ul class="skill">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Jquery</li>
+                  <li>PHP</li>
+                  <li>Figma</li>
+                </ul>
+              </div>
+              <div class="github">
+                <p class="sub_name">github</p>
+                <a href="https://github.com/Hi-rien/newcanon" target="_blank">https://github.com/Hi-rien/newcanon</a>
+              </div>
+              <div class="view">
+                <p class="sub_name page_open" onclick="canonOpen();" title="캐논 보러 가기"><span>View</span> <img src="./img/arrow_bk_icon.png" alt=""></p>
+              </div>
+            </div>
+          </section>
+          <section class="right">
+            <div class="scroll">
+              <img src="./img/canon/canon01.png" alt="canon" class="mobile">
+              <img src="./img/canon/canon02.png" alt="canon" class="mobile">
+              <img src="./img/canon/canon.jpg" alt="canon" class="pc">
+              <img src="./img/canon/canon2.jpg" alt="canon" class="pc">
+            </div>
+          </section>
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    function canonOpen() {
+      win = window.open("http://rien2.dothome.co.kr/newcanon")
+    }
+  </script>
+  
+</body>
+</html>

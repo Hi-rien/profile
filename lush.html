@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="rien_portfolio" />
+  <meta property="og:title" content="rien_portfolio" />
+  <meta property="og:description" content="개인 포트폴리오 페이지 입니다." />
+
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/lush.css">
+
+  <script src="./js/jquery-1.11.2.min.js"></script>
+  <script defer src="./js/common.js"></script>
+
+  <title>rien_portfolio</title>
+
+</head>
+<body>
+
+  <div id="pdf_modal">
+    <img src="./img/close_icon.png" class="close">
+    <div class="pdf_section">
+      <img src="./img/pdf_lush.png" alt="기획서">
+    </div>
+  </div>
+
+  <div id="project">
+    <div class="inner">
+      <div class="back"></div>
+      <div class="contents">
+        <header>
+          <img src="./img/lush/lodo.bk.png" alt="러쉬 로고">
+          <span>"믿을 수 있는 제품 LUSH"</span>
+        </header>
+        <div class="box">
+          <section class="left">
+            <div class="main_img">
+              <img src="./img/lush/lush_iphone.png" alt="러쉬 메인이미지">
+            </div>
+            <div class="desc_box">
+              <div class="title">
+                <img src="./img/lush/home_icon.png" alt="러쉬아이콘" class="home_icon">
+                <p>LSUH</p>
+                <img src="./img/pdf_icon.png" alt="pdf" class="pdf_icon">
+              </div>
+              <div class="skills">
+                <p class="sub_name">skills</p>
+                <ul class="skill">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Javascript</li>
+                  <li>PHP</li>
+                  <li>Figma</li>
+                </ul>
+              </div>
+              <div class="github">
+                <p class="sub_name">github</p>
+                <a href="https://github.com/Hi-rien/lush" target="_blank">https://github.com/Hi-rien/lush</a>
+              </div>
+              <div class="view">
+                <p class="sub_name page_open" onclick="lushOpen();" title="러쉬 보러 가기"><span>View</span> <img src="./img/arrow_icon.png" alt=""></p>
+              </div>
+            </div>
+          </section>
+          <section class="right">
+            <div class="scroll">
+              <img src="./img/lush/lush_iphone2.png" alt="lush">
+              <img src="./img/lush/lush_iphone3.png" alt="lush">
+              <img src="./img/lush/lush03.PNG" alt="">
+              <img src="./img/lush/lush04.jpg" alt="">
+            </div>
+          </section>
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <script>
+function lushOpen() {
+   win = window.open("http://rien.dothome.co.kr/mobile/mobile_shr.html","pf","toolbar=no,location=no,status=no,menubar=no,resizable=no,scrollbars=yes,width=400, height=720,left=800,top=150")
+}
+
+  </script>
+  
+</body>
+</html>

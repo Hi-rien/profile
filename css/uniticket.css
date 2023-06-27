@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+body #pdf_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  display: none;
+}
+body #pdf_modal .close {
+  position: fixed;
+  right: 8%;
+  top: 10%;
+  cursor: pointer;
+}
+body #pdf_modal .pdf_section {
+  margin: 0 auto;
+  width: 70%;
+  height: 100%;
+  background-color: #fff;
+  overflow: auto;
+}
+body #pdf_modal .pdf_section::-webkit-scrollbar {
+  width: 10px;
+}
+body #pdf_modal .pdf_section::-webkit-scrollbar-thumb {
+  background-color: #6947EF;
+}
+body #pdf_modal .pdf_section::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+body #pdf_modal .pdf_section img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+body #project {
+  background-color: #9AD4F2;
+}
+body #project .inner {
+  position: relative;
+  max-width: 1400px;
+  height: 100vh;
+  margin: 0 auto;
+}
+body #project .inner .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #BCE6FF 0%, #FEFFE2 50%, #88CDF6 100%);
+  filter: blur(20px);
+}
+body #project .inner .contents {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body #project .inner .contents header {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+body #project .inner .contents header img {
+  width: 340px;
+}
+body #project .inner .contents header span {
+  font-size: 32px;
+  font-weight: bold;
+}
+body #project .inner .contents .box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2%;
+}
+body #project .inner .contents .box .left {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+body #project .inner .contents .box .left .main_img img {
+  width: 350px;
+}
+body #project .inner .contents .box .left .desc_box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+body #project .inner .contents .box .left .desc_box .sub_name {
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Black Han Sans", sans-serif;
+}
+body #project .inner .contents .box .left .desc_box .sub_name.page_open {
+  cursor: pointer;
+}
+body #project .inner .contents .box .left .desc_box .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Black Han Sans", sans-serif;
+}
+body #project .inner .contents .box .left .desc_box .title .home_icon {
+  width: 50px;
+}
+body #project .inner .contents .box .left .desc_box .title .pdf_icon {
+  width: 40px;
+  cursor: pointer;
+}
+body #project .inner .contents .box .left .desc_box .skills {
+  margin-bottom: 20px;
+}
+body #project .inner .contents .box .left .desc_box .skills .skill {
+  color: #333;
+  margin-left: 20px;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 22px;
+  font-family: "Roboto";
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  font-weight: bold;
+}
+body #project .inner .contents .box .left .desc_box .skills .skill li {
+  text-align: left;
+  margin-bottom: 10px;
+}
+body #project .inner .contents .box .left .desc_box .github a {
+  margin-left: 20px;
+  color: #333;
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: bold;
+}
+body #project .inner .contents .box .right {
+  width: 40%;
+}
+body #project .inner .contents .box .right .scroll {
+  width: 450px;
+  height: 100vh;
+  background-color: #CAEDFF;
+  position: absolute;
+  top: 0;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  padding: 50px 20px;
+}
+body #project .inner .contents .box .right .scroll::-webkit-scrollbar {
+  width: 10px;
+}
+body #project .inner .contents .box .right .scroll::-webkit-scrollbar-thumb {
+  background-color: #88CDF6;
+}
+body #project .inner .contents .box .right .scroll::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+body #project .inner .contents .box .right .scroll img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+body #project .inner .contents .box .right .scroll img:nth-child(odd) {
+  align-self: flex-end;
+}/*# sourceMappingURL=uniticket.css.map */
