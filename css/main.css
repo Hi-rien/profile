@@ -789,544 +789,110 @@ body header h2 {
 body #section3 {
   border-top: 1px solid #0a0a0a;
 }
-body #section3 .inner #project {
-  width: 100%;
-  background-color: #fbfaf8;
-}
-body #section3 .inner #project #pdf_modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 99;
-  display: none;
-}
-body #section3 .inner #project #pdf_modal .close {
-  position: fixed;
-  right: 8%;
-  top: 10%;
-  cursor: pointer;
-}
-body #section3 .inner #project #pdf_modal .pdf_section {
-  margin: 0 auto;
-  width: 70%;
-  height: 100%;
-  background-color: #fff;
-  overflow: auto;
-}
-body #section3 .inner #project #pdf_modal .pdf_section::-webkit-scrollbar {
-  width: 10px;
-}
-body #section3 .inner #project #pdf_modal .pdf_section::-webkit-scrollbar-thumb {
-  background-color: #6947EF;
-}
-body #section3 .inner #project #pdf_modal .pdf_section::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
-}
-body #section3 .inner #project #pdf_modal .pdf_section img {
-  display: block;
-  width: 80%;
-  margin: 0 auto;
-}
-body #section3 .inner #project .header {
-  position: relative;
-  width: 100%;
-  height: 400px;
-}
-body #section3 .inner #project .header .subject {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 28px;
-  color: #111;
-}
-body #section3 .inner #project .content_box {
-  width: 100%;
-  height: 1000px;
-  overflow: hidden;
-  position: relative;
-}
-body #section3 .inner #project .content_box .pdf_icon {
-  position: absolute;
-  right: 50px;
-  top: 50px;
-  z-index: 9;
-  cursor: pointer;
-}
-body #section3 .inner #project .content_box .backgound_box {
-  position: absolute;
-  width: 100%;
-  height: 1000px;
-  background-image: url("../img/lush/mood4.jpg");
-  opacity: 0.4;
-  filter: blur(10px);
-}
-body #section3 .inner #project .content_box .inner_box {
-  width: 100%;
-  height: 1000px;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15%;
-}
-body #section3 .inner #project .content_box .inner_box .content {
-  display: flex;
-  flex-direction: column;
-  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='4' stroke-dasharray='17%2c 9%2c 6' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
-  padding: 2%;
-}
-body #section3 .inner #project .content_box .inner_box .content .sub_name {
-  font-size: 32px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-body #section3 .inner #project .content_box .inner_box .content .sub_name.page_open {
-  cursor: pointer;
-}
-body #section3 .inner #project .content_box .inner_box .content a {
-  margin-left: 20px;
-  color: #333;
-  font-family: "Roboto";
-  font-size: 22px;
-}
-body #section3 .inner #project .content_box .inner_box .content .title {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  margin-bottom: 40px;
-}
-body #section3 .inner #project .content_box .inner_box .content .title .home_icon {
-  width: 80px;
-}
-body #section3 .inner #project .content_box .inner_box .content .title p {
-  font-size: 48px;
-}
-body #section3 .inner #project .content_box .inner_box .content .skills {
-  margin-bottom: 20px;
-}
-body #section3 .inner #project .content_box .inner_box .content .skills .skill {
-  margin-left: 20px;
-  width: 500px;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 22px;
-  font-family: "Roboto";
-  -moz-column-gap: 50px;
-       column-gap: 50px;
-}
-body #section3 .inner #project .content_box .inner_box .content .skills .skill li {
-  text-align: left;
-  margin-bottom: 10px;
-}
-body #section3 .inner #project .content_box .inner_box .content .github {
-  margin-bottom: 20px;
-}
-body #section3 .inner #project .content_box .mobile {
-  width: 20%;
-}
-body #section3 .inner #project .content_box .mobile.action {
-  -webkit-animation: mobile 1s 0.5s ease;
-          animation: mobile 1s 0.5s ease;
-}
-body #section3 .inner #project .content_box .list {
-  position: absolute;
-  top: 220px;
-  right: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  font-family: "Roboto";
-  font-weight: bold;
-}
-body #section3 .inner #project .content_box .list li {
-  position: relative;
-}
-body #section3 .inner #project .content_box .list li::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  background-color: #6947EF;
-  border-radius: 50%;
-  opacity: 0.4;
-  top: -5px;
-  left: -10px;
-}
-body #section3 .inner #project #lush {
-  color: #111;
-  padding-bottom: 50px;
-}
-body #section3 .inner #project #lush .header .lush_logo {
-  position: absolute;
-  top: 120px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 300px;
-}
-body #section3 .inner #project #lush .header .img1 {
-  width: 200px;
-  position: absolute;
-  top: 40px;
-  right: 30%;
-}
-body #section3 .inner #project #lush .header .img2 {
-  position: absolute;
-  width: 400px;
-  right: 0;
-  bottom: -80px;
-}
-body #section3 .inner #project #lush .content .title p {
-  font-family: "lush";
-}
-body #section3 .inner #project #lush .detail_box {
-  width: 95%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 50px;
-}
-body #section3 .inner #project #lush .detail_box img {
-  border-radius: 10px;
-  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.3);
-}
-body #section3 .inner #project #lush .detail_box ul {
-  width: 100%;
-  height: 600px;
-  border-radius: 10px;
-  position: relative;
-  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.1);
-}
-body #section3 .inner #project #lush .detail_box ul span {
-  position: absolute;
-  left: 50px;
-  top: 0;
-  font-size: 48px;
-  transform: translateY(-50%);
-}
-body #section3 .inner #project #lush .detail_box .left {
-  background: linear-gradient(to bottom, #B4E8FA 0%, #FADCF6 100%);
-}
-body #section3 .inner #project #lush .detail_box .left li {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-body #section3 .inner #project #lush .detail_box .left li img {
-  width: 400px;
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-}
-body #section3 .inner #project #lush .detail_box .left li img.active {
-  -webkit-animation: showUPt 1.5s ease both;
-          animation: showUPt 1.5s ease both;
-}
-body #section3 .inner #project #lush .detail_box .right {
-  display: flex;
-  background: linear-gradient(to top, #B4E8FA 0%, #FADCF6 100%);
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 40px;
-}
-body #section3 .inner #project #lush .detail_box .right li img {
-  height: 400px;
-  opacity: 0;
-}
-body #section3 .inner #project #lush .detail_box .right li:last-child {
-  position: absolute;
-  bottom: 5px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-body #section3 .inner #project #lush .detail_box .right li:nth-last-child(1) img.active {
-  -webkit-animation: showUp 1s 0.5s ease both;
-          animation: showUp 1s 0.5s ease both;
-}
-body #section3 .inner #project #lush .detail_box .right li:nth-last-child(2) img.active {
-  -webkit-animation: showUp 1s 1s ease both;
-          animation: showUp 1s 1s ease both;
-}
-body #section3 .inner #project #lush .detail_box .right li:nth-last-child(3) img.active {
-  -webkit-animation: showUp 1s 1.5s ease both;
-          animation: showUp 1s 1.5s ease both;
-}
-body #section3 .inner #project #canon {
-  width: 100%;
-  color: #f7f9f8;
-  margin-bottom: 50px;
-}
-body #section3 .inner #project #canon .header .canon_logo {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-body #section3 .inner #project #canon .header .line {
-  width: 100%;
-  height: 10px;
-  position: absolute;
-  top: 0;
-}
-body #section3 .inner #project #canon .header .line.line1 {
-  background-color: #111;
-}
-body #section3 .inner #project #canon .header .line.line2 {
-  top: 10px;
-  background-color: #cd2327;
-}
-body #section3 .inner #project #canon .content_box {
-  background-color: #000;
-}
-body #section3 .inner #project #canon .content_box .list {
-  right: 280px;
-}
-body #section3 .inner #project #canon .content_box .backgound_box {
-  background-size: cover;
-  background-image: url("../img/canon/background.jpg");
-  filter: blur(0);
-  opacity: 0.8;
-}
-body #section3 .inner #project #canon .content_box .content {
-  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='white' stroke-width='4' stroke-dasharray='17%2c 9%2c 6' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
-}
-body #section3 .inner #project #canon .content_box .content .title {
-  font-family: "canon";
-}
-body #section3 .inner #project #canon .content_box .content .title span {
-  color: #cd2327;
-}
-body #section3 .inner #project #canon .content_box a {
+body #section3 .inner a {
   color: #fff;
 }
-body #section3 .inner #project #canon .detail_box {
-  width: 100%;
+body #section3 .inner #projects {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+body #section3 .inner #projects .project {
+  margin-top: 100px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 20px;
 }
-body #section3 .inner #project #canon .detail_box li {
-  border-radius: 10px;
+body #section3 .inner #projects .project .title_box {
+  position: relative;
+  height: 450px;
+  border: 1px solid #eee;
+  border-radius: 30px 30px 0 0;
   overflow: hidden;
-  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
-body #section3 .inner #project #canon .detail_box img {
-  transition: all 0.5s;
-}
-body #section3 .inner #project #canon .detail_box img:hover {
-  transform: scale(1.07);
-}
-body #section3 .inner #project #canon .detail_box ul {
-  margin-top: 50px;
-  position: relative;
-}
-body #section3 .inner #project #canon .detail_box ul li:last-child {
-  position: absolute;
-  top: 0;
-  left: 50px;
+body #section3 .inner #projects .project .title_box h3 {
   font-size: 48px;
-  box-shadow: none;
-  color: #111;
-  transform: translateY(-50%);
+  text-align: center;
+  margin: 30px 0;
 }
-body #section3 .inner #project #canon .detail_box .phone {
-  margin-left: 20px;
-  width: 100%;
-  background: linear-gradient(to top, #112C4A 0%, #2E3552 100%);
-  display: flex;
-  flex-direction: column;
-  padding: 100px 50px;
-  gap: 30px;
-  border-radius: 0 0 10px 10px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+body #section3 .inner #projects .project .title_box img {
+  width: 220px;
 }
-body #section3 .inner #project #canon .detail_box .phone li:nth-child(1) {
-  align-self: flex-start;
-}
-body #section3 .inner #project #canon .detail_box .phone li:nth-child(2) {
-  align-self: flex-end;
-}
-body #section3 .inner #project #canon .detail_box .phone li:nth-child(3) {
-  align-self: flex-start;
-}
-body #section3 .inner #project #canon .detail_box .phone img {
-  height: 500px;
-}
-body #section3 .inner #project #canon .detail_box .pc {
-  margin-right: 20px;
-  background: linear-gradient(to top, #2E3552 0%, #112C4A 100%);
-  padding: 100px 20px;
+body #section3 .inner #projects .project .desc_box {
+  font-family: "Roboto";
+  height: 160px;
+  border: 1px solid #eee;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  border-radius: 0 0 10px 10px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  justify-content: space-around;
 }
-body #section3 .inner #project #canon .detail_box .pc li img {
-  width: 800px;
+body #section3 .inner #projects .project .desc_box h4 {
+  font-size: 28px;
 }
-body #section3 .inner #project #uniticket {
-  width: 100%;
-  margin-bottom: 50px;
-}
-body #section3 .inner #project #uniticket .header {
+body #section3 .inner #projects .project .desc_box .els {
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-body #section3 .inner #project #uniticket .content_box .backgound_box {
-  background-image: none;
-  background: linear-gradient(to top, #BCE6FF 0%, #FEFFE2 50%, #88CDF6 100%);
-  opacity: 0.7;
-  filter: blur(20px);
-}
-body #section3 .inner #project #uniticket .detail_box {
+  gap: 10%;
   width: 100%;
-  margin-top: 50px;
 }
-body #section3 .inner #project #uniticket .detail_box div {
-  width: 95%;
-  margin: 0 auto;
-  position: relative;
-  border-radius: 10px;
+body #section3 .inner #projects .project .desc_box .els span {
+  font-size: 20px;
+  font-weight: bold;
 }
-body #section3 .inner #project #uniticket .detail_box div.main {
-  height: 600px;
-  background: linear-gradient(to top, #FEFFE2 0%, #88CDF6 100%);
-}
-body #section3 .inner #project #uniticket .detail_box div.main li {
+body #section3 .inner #projects .project#uniticket .img1 {
   position: absolute;
-  top: 50%;
+  right: 30px;
+  z-index: 1;
+  top: 100px;
+}
+body #section3 .inner #projects .project#uniticket .img2 {
+  position: absolute;
+  left: 30px;
+}
+body #section3 .inner #projects .project#uniticket .img3 {
+  position: absolute;
+  top: 150px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 }
-body #section3 .inner #project #uniticket .detail_box div.main li img {
-  height: 450px;
-  border-radius: 10px;
-}
-body #section3 .inner #project #uniticket .detail_box div.main li.ani1 {
-  -webkit-animation: mobileAni1 1s ease both;
-          animation: mobileAni1 1s ease both;
-}
-body #section3 .inner #project #uniticket .detail_box div.main li.ani1.ani3 {
-  -webkit-animation: mobileAni3 1s ease both;
-          animation: mobileAni3 1s ease both;
-}
-body #section3 .inner #project #uniticket .detail_box div.main li.ani2 {
-  -webkit-animation: mobileAni2 1s ease both;
-          animation: mobileAni2 1s ease both;
-}
-body #section3 .inner #project #uniticket .detail_box div.main li.ani2.ani4 {
-  -webkit-animation: mobileAni4 1s 0.5s ease both;
-          animation: mobileAni4 1s 0.5s ease both;
-}
-body #section3 .inner #project #uniticket .detail_box div.main li:last-child {
+body #section3 .inner #projects .project#canon .img1 {
+  width: 180px;
   position: absolute;
-  left: 100px;
-  top: 0;
-  font-size: 48px;
-  color: #111;
+  left: 20px;
 }
-body #section3 .inner #project #uniticket .detail_box div.sub {
-  margin-top: 50px;
-  height: 900px;
-  width: 95%;
-  background: linear-gradient(to bottom, #FEFFE2 0%, #88CDF6 100%);
-  position: relative;
-}
-body #section3 .inner #project #uniticket .detail_box div.sub .card_3d {
-  width: 280px;
-  height: 450px;
-  perspective: 1000px;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-body #section3 .inner #project #uniticket .detail_box div.sub .card_3d ul {
-  width: 100%;
-  height: 100%;
+body #section3 .inner #projects .project#canon .img2 {
   position: absolute;
-  transform-style: preserve-3d;
-  transition: transform 1s;
+  width: 120px;
+  bottom: 0;
+  left: 30%;
+  z-index: 1;
 }
-body #section3 .inner #project #uniticket .detail_box div.sub .card_3d ul li {
+body #section3 .inner #projects .project#canon .img3 {
   position: absolute;
-  border-radius: 10px;
-  overflow: hidden;
+  right: -10px;
+  bottom: 0;
+  width: 400px;
 }
-body #section3 .inner #project #uniticket .detail_box div.sub .card_3d ul li:nth-child(1) {
-  transform: rotateY(0deg) translateZ(250px);
-}
-body #section3 .inner #project #uniticket .detail_box div.sub .card_3d ul li:nth-child(2) {
-  transform: rotateY(60deg) translateZ(250px);
-}
-body #section3 .inner #project #uniticket .detail_box div.sub .card_3d ul li:nth-child(3) {
-  transform: rotateY(120deg) translateZ(250px);
-}
-body #section3 .inner #project #uniticket .detail_box div.sub .card_3d ul li:nth-child(4) {
-  transform: rotateY(180deg) translateZ(250px);
-}
-body #section3 .inner #project #uniticket .detail_box div.sub .card_3d ul li:nth-child(5) {
-  transform: rotateY(240deg) translateZ(250px);
-}
-body #section3 .inner #project #uniticket .detail_box div.sub .card_3d ul li:nth-child(6) {
-  transform: rotateY(300deg) translateZ(250px);
-}
-body #section3 .inner #project #uniticket .detail_box div.sub .card_3d ul li img {
-  height: 450px;
-}
-body #section3 .inner #project #uniticket .detail_box div.sub span {
+body #section3 .inner #projects .project#lush .img1 {
   position: absolute;
-  font-size: 32px;
-  cursor: pointer;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
-body #section3 .inner #project #uniticket .detail_box div.sub span.next {
-  right: 20%;
-}
-body #section3 .inner #project #uniticket .detail_box div.sub span.next::after {
-  content: "";
-  display: inline-block;
-  width: 50px;
-  height: 2px;
-  background-color: #111;
+body #section3 .inner #projects .project#lush .img2 {
   position: absolute;
-  top: 50%;
-  margin-left: 10px;
+  left: 12%;
 }
-body #section3 .inner #project #uniticket .detail_box div.sub span.prev {
-  left: 20%;
-}
-body #section3 .inner #project #uniticket .detail_box div.sub span.prev::before {
-  content: "";
-  display: inline-block;
-  width: 50px;
-  height: 2px;
-  background-color: #111;
+body #section3 .inner #projects .project#lush .img3 {
   position: absolute;
-  top: 50%;
-  left: -60px;
-}
-body #section3 .inner #project #uniticket .detail_box div.sub p {
-  position: absolute;
-  top: 0;
-  left: 50px;
-  font-size: 48px;
-  transform: translateY(-50%);
-  color: #111;
+  right: 12%;
 }
 body #section4 .edu {
   margin-top: 50px;
