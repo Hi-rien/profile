@@ -712,9 +712,17 @@ body #section2 .slide_skill li a {
 body #section2 .slide_skill li a:hover {
   opacity: 1;
 }
+body #section2 .appeal {
+  position: absolute;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 28px;
+  right: 25%;
+  top: 25%;
+}
 body #section2 #skillper {
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 45%;
   color: #fff;
 }
@@ -894,10 +902,17 @@ body #section3 .inner #projects .project#lush .img3 {
   position: absolute;
   right: 12%;
 }
+body #section3 .inner #projects .project#starbucks .title_box img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 450px;
+}
 body #section4 .edu {
   margin-top: 50px;
   width: 100%;
-  padding: 0 50px;
+  padding: 0 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -947,4 +962,7 @@ body #section5 .inner .content_box .right li {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+body #section5 .inner .content_box .right li a {
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

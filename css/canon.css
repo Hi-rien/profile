@@ -13,6 +13,11 @@ body {
   overflow: hidden;
   color: #fff;
 }
+body .close {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+}
 body #pdf_modal {
   position: fixed;
   top: 0;

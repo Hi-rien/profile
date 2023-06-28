@@ -1,5 +1,3 @@
-
-
 * {
   box-sizing: border-box;
 }
@@ -149,34 +147,42 @@
     width: 80%;
   }
 }
+
 @keyframes mobileAni1 {
   0% {
     transform: translate(-50%, -50%);
   }
+
   100% {
     transform: translate(0, -50%) rotate(45deg);
   }
 }
+
 @keyframes mobileAni2 {
   0% {
     transform: translate(-50%, -50%);
   }
+
   100% {
     transform: translate(-100%, -50%) rotate(-45deg);
   }
 }
+
 @keyframes mobileAni3 {
   0% {
     transform: translate(0, -50%) rotate(45deg);
   }
+
   100% {
     transform: translate(80%, -50%) rotate(0);
   }
 }
+
 @keyframes mobileAni4 {
   0% {
     transform: translate(-100%, -50%) rotate(-45deg);
   }
+
   100% {
     transform: translate(-180%, -50%) rotate(0);
   }
@@ -187,6 +193,7 @@
     opacity: 0;
     transform: translateX(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -198,6 +205,7 @@
     opacity: 0;
     transform: translateY(50px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -209,6 +217,7 @@
     opacity: 0;
     transform: translate(-50%, 50px);
   }
+
   100% {
     opacity: 1;
     transform: translate(-50%, 0);
@@ -440,7 +449,7 @@ body {
           position: absolute;
           top: 50%;
           left: 50%;
-          transform: translate(-50%,-50%);
+          transform: translate(-50%, -50%);
           height: 460px;
           width: 95%;
           border-radius: 5px;
@@ -448,37 +457,45 @@ body {
           background-color: #000;
           color: #fff;
           padding: 50px;
+
           .hello {
             font-size: 48px;
             letter-spacing: 2px;
           }
+
           .name {
             font-size: 32px;
             margin: 20px 0;
             margin-left: 20px;
+
             span {
               color: #6947EF;
             }
+
             &.active {
               animation: showLeft 1.5s ease-in-out both;
             }
           }
+
           .desc {
             font-family: "Roboto";
             font-size: 20px;
             line-height: 1.8;
             margin-top: 40px;
             margin-left: 20px;
+
             &.active {
               animation: showLeft 1.5s 1s ease-in-out both;
             }
           }
+
           .emoticon_box {
             width: 170px;
             height: 170px;
             position: absolute;
             right: 5%;
             top: 5%;
+
             .emoticon {
               position: absolute;
               top: 0;
@@ -554,9 +571,11 @@ body {
       position: absolute;
       bottom: 20px;
       right: 8%;
+
       img {
         width: 50px;
       }
+
       &.fixed {
         position: fixed;
       }
@@ -610,9 +629,18 @@ body {
       }
     }
 
+    .appeal {
+      position: absolute;
+      color: #fff;
+      font-family: "Roboto";
+      font-size: 28px;
+      right: 25%;
+      top: 25%;
+    }
+
     #skillper {
       position: absolute;
-      top: 30%;
+      top: 35%;
       left: 45%;
       color: #fff;
 
@@ -691,6 +719,7 @@ body {
     justify-content: center;
     align-items: flex-end;
     padding-bottom: 100px;
+
     h2 {
       text-shadow: 0 0 2px #fff;
       letter-spacing: 30px;
@@ -712,11 +741,13 @@ body {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         column-gap: 50px;
+
         .project {
           margin-top: 100px;
           display: flex;
           flex-direction: column;
           gap: 20px;
+
           .title_box {
             position: relative;
             height: 450px;
@@ -726,20 +757,24 @@ body {
             background-color: #111;
             transition: all 1s;
             cursor: pointer;
+
             h3 {
               font-size: 48px;
               text-align: center;
               margin: 30px 0;
             }
+
             img {
               width: 220px;
               transition: all 1s;
             }
+
             &:hover {
               z-index: 1;
               transform: scale(1.05);
             }
           }
+
           .desc_box {
             font-family: "Roboto";
             height: 160px;
@@ -749,20 +784,24 @@ body {
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
+
             h4 {
               font-size: 28px;
             }
+
             .els {
               display: flex;
               justify-content: center;
               gap: 10%;
               width: 100%;
+
               span {
                 font-size: 20px;
                 font-weight: bold;
               }
             }
           }
+
           &#uniticket {
             .img1 {
               position: absolute;
@@ -770,10 +809,12 @@ body {
               z-index: 1;
               top: 100px;
             }
+
             .img2 {
               position: absolute;
               left: 30px;
             }
+
             .img3 {
               position: absolute;
               top: 150px;
@@ -781,12 +822,14 @@ body {
               transform: translateX(-50%);
             }
           }
+
           &#canon {
             .img1 {
               width: 180px;
               position: absolute;
               left: 20px;
             }
+
             .img2 {
               position: absolute;
               width: 120px;
@@ -794,6 +837,7 @@ body {
               left: 30%;
               z-index: 1;
             }
+
             .img3 {
               position: absolute;
               right: -10px;
@@ -801,6 +845,7 @@ body {
               width: 400px;
             }
           }
+
           &#lush {
             .img1 {
               position: absolute;
@@ -809,16 +854,29 @@ body {
               transform: translateX(-50%);
               z-index: 1;
             }
+
             .img2 {
               position: absolute;
               left: 12%;
             }
+
             .img3 {
               position: absolute;
               right: 12%;
             }
           }
 
+          &#starbucks {
+            .title_box {
+              img {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 450px;
+              }
+            }
+          }
         }
       }
     }
@@ -829,18 +887,20 @@ body {
     .edu {
       margin-top: 50px;
       width: 100%;
-      padding: 0 50px;
+      padding: 0 100px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       font-family: "Roboto";
       color: #fff;
+
       li {
         h5 {
           font-size: 24px;
           font-weight: bold;
           padding-left: 30px;
         }
+
         .box {
           margin-top: 20px;
           width: 550px;
@@ -850,6 +910,7 @@ body {
           gap: 10px;
           flex-direction: column;
           justify-content: center;
+
           p {
             padding-left: 30px;
           }
@@ -860,8 +921,10 @@ body {
 
   #section5 {
     margin-bottom: 100px;
+
     .inner {
       padding: 0 50px;
+
       .content_box {
         width: 100%;
         height: 350px;
@@ -872,15 +935,20 @@ body {
         gap: 20%;
         color: #fff;
         font-family: "Roboto";
+
         .left {
           font-size: 36px;
         }
+
         .right {
           li {
             height: 60px;
             display: flex;
             align-items: center;
             gap: 30px;
+            a {
+              color: #fff;
+            }
           }
         }
       }

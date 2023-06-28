@@ -13,3 +13,4 @@ $('#pdf_modal .close').click(function() {
     overflow: 'auto'
   })
 })
+

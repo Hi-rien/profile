@@ -13,6 +13,13 @@ body {
   height: 100vh;
   overflow: hidden;
   color: #fff;
+
+  .close {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+  }
+  
     #pdf_modal {
     position: fixed;
     top: 0;
