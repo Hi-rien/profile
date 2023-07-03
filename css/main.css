@@ -2,17 +2,6 @@
   box-sizing: border-box;
 }
 
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(0);
-  }
-}
-
 @keyframes blink {
   0% {
     opacity: 1;
@@ -21,24 +10,6 @@
   100% {
     opacity: 0;
     transform: scale(0);
-  }
-}
-@-webkit-keyframes shooting {
-  0% {
-    transform: translate(300px, -120px);
-    opacity: 0;
-  }
-  90% {
-    transform: translate(300px, -120px);
-    opacity: 0;
-  }
-  91% {
-    transform: translate(300px, -120px);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(-1400px, 600px);
-    opacity: 0;
   }
 }
 @keyframes shooting {
@@ -59,16 +30,6 @@
     opacity: 0;
   }
 }
-@-webkit-keyframes line1 {
-  0% {
-    opacity: 0;
-    transform: scale(0) rotate(23deg);
-  }
-  100% {
-    opacity: 0.5;
-    transform: scale(1) rotate(23deg);
-  }
-}
 @keyframes line1 {
   0% {
     opacity: 0;
@@ -77,16 +38,6 @@
   100% {
     opacity: 0.5;
     transform: scale(1) rotate(23deg);
-  }
-}
-@-webkit-keyframes line2 {
-  0% {
-    opacity: 0;
-    transform: scale(0) rotate(114deg);
-  }
-  100% {
-    opacity: 0.5;
-    transform: scale(1) rotate(114deg);
   }
 }
 @keyframes line2 {
@@ -99,16 +50,6 @@
     transform: scale(1) rotate(114deg);
   }
 }
-@-webkit-keyframes scrollAni {
-  0% {
-    opacity: 1;
-    transform: translate(-50%, 0);
-  }
-  100% {
-    opacity: 0.6;
-    transform: translate(-50%, -10px);
-  }
-}
 @keyframes scrollAni {
   0% {
     opacity: 1;
@@ -117,17 +58,6 @@
   100% {
     opacity: 0.6;
     transform: translate(-50%, -10px);
-  }
-}
-@-webkit-keyframes mobile {
-  0% {
-    transform: rotate(0);
-  }
-  50% {
-    transform: rotate(5deg);
-  }
-  100% {
-    transform: rotate(0);
   }
 }
 @keyframes mobile {
@@ -141,28 +71,12 @@
     transform: rotate(0);
   }
 }
-@-webkit-keyframes percent_css {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 80%;
-  }
-}
 @keyframes percent_css {
   0% {
     width: 0;
   }
   100% {
     width: 80%;
-  }
-}
-@-webkit-keyframes percent_html {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 90%;
   }
 }
 @keyframes percent_html {
@@ -173,28 +87,12 @@
     width: 90%;
   }
 }
-@-webkit-keyframes percent_jq {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 70%;
-  }
-}
 @keyframes percent_jq {
   0% {
     width: 0;
   }
   100% {
     width: 70%;
-  }
-}
-@-webkit-keyframes percent_js {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 60%;
   }
 }
 @keyframes percent_js {
@@ -205,28 +103,12 @@
     width: 60%;
   }
 }
-@-webkit-keyframes percent_php {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 50%;
-  }
-}
 @keyframes percent_php {
   0% {
     width: 0;
   }
   100% {
     width: 50%;
-  }
-}
-@-webkit-keyframes percent_scss {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 80%;
   }
 }
 @keyframes percent_scss {
@@ -237,28 +119,12 @@
     width: 80%;
   }
 }
-@-webkit-keyframes mobileAni1 {
-  0% {
-    transform: translate(-50%, -50%);
-  }
-  100% {
-    transform: translate(0, -50%) rotate(45deg);
-  }
-}
 @keyframes mobileAni1 {
   0% {
     transform: translate(-50%, -50%);
   }
   100% {
     transform: translate(0, -50%) rotate(45deg);
-  }
-}
-@-webkit-keyframes mobileAni2 {
-  0% {
-    transform: translate(-50%, -50%);
-  }
-  100% {
-    transform: translate(-100%, -50%) rotate(-45deg);
   }
 }
 @keyframes mobileAni2 {
@@ -269,14 +135,6 @@
     transform: translate(-100%, -50%) rotate(-45deg);
   }
 }
-@-webkit-keyframes mobileAni3 {
-  0% {
-    transform: translate(0, -50%) rotate(45deg);
-  }
-  100% {
-    transform: translate(80%, -50%) rotate(0);
-  }
-}
 @keyframes mobileAni3 {
   0% {
     transform: translate(0, -50%) rotate(45deg);
@@ -285,30 +143,12 @@
     transform: translate(80%, -50%) rotate(0);
   }
 }
-@-webkit-keyframes mobileAni4 {
-  0% {
-    transform: translate(-100%, -50%) rotate(-45deg);
-  }
-  100% {
-    transform: translate(-180%, -50%) rotate(0);
-  }
-}
 @keyframes mobileAni4 {
   0% {
     transform: translate(-100%, -50%) rotate(-45deg);
   }
   100% {
     transform: translate(-180%, -50%) rotate(0);
-  }
-}
-@-webkit-keyframes showLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
   }
 }
 @keyframes showLeft {
@@ -321,16 +161,6 @@
     transform: translateX(0);
   }
 }
-@-webkit-keyframes showUp {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 @keyframes showUp {
   0% {
     opacity: 0;
@@ -339,16 +169,6 @@
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-@-webkit-keyframes showUPt {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, 50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, 0);
   }
 }
 @keyframes showUPt {
@@ -376,8 +196,7 @@ body #shooting_star .scroll {
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
-  -webkit-animation: scrollAni 1.5s ease-in-out alternate infinite;
-          animation: scrollAni 1.5s ease-in-out alternate infinite;
+  animation: scrollAni 1.5s ease-in-out alternate infinite;
 }
 body #shooting_star #typing {
   text-align: center;
@@ -405,74 +224,62 @@ body #shooting_star #typing.active::after {
   display: none;
 }
 body #shooting_star #str14 {
-  -webkit-animation: blink 1.5s ease-in-out alternate infinite;
-          animation: blink 1.5s ease-in-out alternate infinite;
+  animation: blink 1.5s ease-in-out alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str11 {
-  -webkit-animation: blink 1.5s ease-in-out 1s alternate infinite;
-          animation: blink 1.5s ease-in-out 1s alternate infinite;
+  animation: blink 1.5s ease-in-out 1s alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str1 {
-  -webkit-animation: blink 2s ease-in-out 2s alternate infinite;
-          animation: blink 2s ease-in-out 2s alternate infinite;
+  animation: blink 2s ease-in-out 2s alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str15 {
-  -webkit-animation: blink 2s ease-in-out 0.5s alternate infinite;
-          animation: blink 2s ease-in-out 0.5s alternate infinite;
+  animation: blink 2s ease-in-out 0.5s alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str8 {
-  -webkit-animation: blink 3s ease-in-out 3s alternate infinite;
-          animation: blink 3s ease-in-out 3s alternate infinite;
+  animation: blink 3s ease-in-out 3s alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str13 {
-  -webkit-animation: blink 2s ease-in-out 1s alternate infinite;
-          animation: blink 2s ease-in-out 1s alternate infinite;
+  animation: blink 2s ease-in-out 1s alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str5 {
-  -webkit-animation: blink 3s ease-in-out 1.5s alternate infinite;
-          animation: blink 3s ease-in-out 1.5s alternate infinite;
+  animation: blink 3s ease-in-out 1.5s alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str10 {
-  -webkit-animation: blink 2s ease-in-out 1s alternate infinite;
-          animation: blink 2s ease-in-out 1s alternate infinite;
+  animation: blink 2s ease-in-out 1s alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str4 {
-  -webkit-animation: blink 1.5s ease-in-out 1s alternate infinite;
-          animation: blink 1.5s ease-in-out 1s alternate infinite;
+  animation: blink 1.5s ease-in-out 1s alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str3 {
-  -webkit-animation: blink 1.5s ease-in-out alternate infinite;
-          animation: blink 1.5s ease-in-out alternate infinite;
+  animation: blink 1.5s ease-in-out alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str12 {
-  -webkit-animation: blink 3s ease-in-out alternate infinite;
-          animation: blink 3s ease-in-out alternate infinite;
+  animation: blink 3s ease-in-out alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str2 {
-  -webkit-animation: blink 3s ease-in-out alternate infinite;
-          animation: blink 3s ease-in-out alternate infinite;
+  animation: blink 3s ease-in-out alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
@@ -480,8 +287,7 @@ body #shooting_star #shooting2 {
   opacity: 0;
   transform-box: fill-box;
   transform-origin: center;
-  -webkit-animation: shooting 6s ease-in-out infinite;
-          animation: shooting 6s ease-in-out infinite;
+  animation: shooting 6s ease-in-out infinite;
 }
 body #shooting_star #tree {
   transform-box: fill-box;
@@ -522,12 +328,9 @@ body .section .line {
   background-color: #6947EF;
   position: absolute;
   z-index: -1;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
 }
 body #section1 .line.line1 {
   transform: rotate(23deg);
@@ -535,8 +338,7 @@ body #section1 .line.line1 {
   left: -100px;
 }
 body #section1 .line.line1.show {
-  -webkit-animation-name: line1;
-          animation-name: line1;
+  animation-name: line1;
 }
 body #section1 .line.line2 {
   top: 450px;
@@ -544,8 +346,7 @@ body #section1 .line.line2 {
   transform: rotate(114deg);
 }
 body #section1 .line.line2.show {
-  -webkit-animation-name: line2;
-          animation-name: line2;
+  animation-name: line2;
 }
 body #section1 .inner .about_box {
   position: absolute;
@@ -586,8 +387,7 @@ body #section1 .inner .about_box .inner_box .name span {
   color: #6947EF;
 }
 body #section1 .inner .about_box .inner_box .name.active {
-  -webkit-animation: showLeft 1.5s ease-in-out both;
-          animation: showLeft 1.5s ease-in-out both;
+  animation: showLeft 1.5s ease-in-out both;
 }
 body #section1 .inner .about_box .inner_box .desc {
   font-family: "Roboto";
@@ -597,8 +397,7 @@ body #section1 .inner .about_box .inner_box .desc {
   margin-left: 20px;
 }
 body #section1 .inner .about_box .inner_box .desc.active {
-  -webkit-animation: showLeft 1.5s 1s ease-in-out both;
-          animation: showLeft 1.5s 1s ease-in-out both;
+  animation: showLeft 1.5s 1s ease-in-out both;
 }
 body #section1 .inner .about_box .inner_box .emoticon_box {
   width: 170px;
@@ -680,8 +479,7 @@ body #section2 .line3 {
   top: 200px;
 }
 body #section2 .line3.show {
-  -webkit-animation-name: line1;
-          animation-name: line1;
+  animation-name: line1;
 }
 body #section2 .line4 {
   transform: rotate(114deg);
@@ -689,8 +487,7 @@ body #section2 .line4 {
   right: -350px;
 }
 body #section2 .line4.show {
-  -webkit-animation-name: line2;
-          animation-name: line2;
+  animation-name: line2;
 }
 body #section2 .slide_skill {
   width: 100%;
@@ -716,9 +513,10 @@ body #section2 .appeal {
   position: absolute;
   color: #fff;
   font-family: "Roboto";
-  font-size: 28px;
-  right: 25%;
-  top: 25%;
+  font-size: 32px;
+  right: 20%;
+  top: 22%;
+  letter-spacing: 2px;
 }
 body #section2 #skillper {
   position: absolute;
@@ -750,28 +548,22 @@ body #section2 #skillper .percent li p {
   background-color: #6947EF;
 }
 body #section2 #skillper .percent li:nth-child(1) p.start {
-  -webkit-animation: percent_css 1s ease both;
-          animation: percent_css 1s ease both;
+  animation: percent_css 1s ease both;
 }
 body #section2 #skillper .percent li:nth-child(2) p {
-  -webkit-animation: percent_html 1s ease both;
-          animation: percent_html 1s ease both;
+  animation: percent_html 1s ease both;
 }
 body #section2 #skillper .percent li:nth-child(3) p {
-  -webkit-animation: percent_jq 1s ease both;
-          animation: percent_jq 1s ease both;
+  animation: percent_jq 1s ease both;
 }
 body #section2 #skillper .percent li:nth-child(4) p {
-  -webkit-animation: percent_js 1s ease both;
-          animation: percent_js 1s ease both;
+  animation: percent_js 1s ease both;
 }
 body #section2 #skillper .percent li:nth-child(5) p {
-  -webkit-animation: percent_php 1s ease both;
-          animation: percent_php 1s ease both;
+  animation: percent_php 1s ease both;
 }
 body #section2 #skillper .percent li:nth-child(6) p {
-  -webkit-animation: percent_scss 1s ease both;
-          animation: percent_scss 1s ease both;
+  animation: percent_scss 1s ease both;
 }
 body header {
   width: 100%;
@@ -809,11 +601,12 @@ body #section3 .inner #projects .project {
 }
 body #section3 .inner #projects .project .title_box {
   position: relative;
+  width: 630px;
   height: 450px;
   border: 1px solid #eee;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
-  background-color: #111;
+  background-color: #222;
   transition: all 1s;
   cursor: pointer;
 }
@@ -821,6 +614,7 @@ body #section3 .inner #projects .project .title_box h3 {
   font-size: 48px;
   text-align: center;
   margin: 30px 0;
+  font-family: "Roboto";
 }
 body #section3 .inner #projects .project .title_box img {
   width: 220px;
@@ -882,6 +676,24 @@ body #section3 .inner #projects .project#canon .img2 {
   z-index: 1;
 }
 body #section3 .inner #projects .project#canon .img3 {
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  width: 400px;
+}
+body #section3 .inner #projects .project#movie .img1 {
+  width: 180px;
+  position: absolute;
+  left: 20px;
+}
+body #section3 .inner #projects .project#movie .img2 {
+  position: absolute;
+  width: 120px;
+  bottom: 0;
+  left: 30%;
+  z-index: 1;
+}
+body #section3 .inner #projects .project#movie .img3 {
   position: absolute;
   right: -10px;
   bottom: 0;

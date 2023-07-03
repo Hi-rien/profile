@@ -633,9 +633,10 @@ body {
       position: absolute;
       color: #fff;
       font-family: "Roboto";
-      font-size: 28px;
-      right: 25%;
-      top: 25%;
+      font-size: 32px;
+      right: 20%;
+      top: 22%;
+      letter-spacing: 2px;
     }
 
     #skillper {
@@ -750,11 +751,12 @@ body {
 
           .title_box {
             position: relative;
+            width: 630px;
             height: 450px;
             border: 1px solid #eee;
             border-radius: 5px 5px 0 0;
             overflow: hidden;
-            background-color: #111;
+            background-color: #222;
             transition: all 1s;
             cursor: pointer;
 
@@ -762,6 +764,7 @@ body {
               font-size: 48px;
               text-align: center;
               margin: 30px 0;
+              font-family: "Roboto";
             }
 
             img {
@@ -824,6 +827,29 @@ body {
           }
 
           &#canon {
+            .img1 {
+              width: 180px;
+              position: absolute;
+              left: 20px;
+            }
+
+            .img2 {
+              position: absolute;
+              width: 120px;
+              bottom: 0;
+              left: 30%;
+              z-index: 1;
+            }
+
+            .img3 {
+              position: absolute;
+              right: -10px;
+              bottom: 0;
+              width: 400px;
+            }
+          }
+          
+          &#movie {
             .img1 {
               width: 180px;
               position: absolute;
