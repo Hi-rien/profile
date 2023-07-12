@@ -167,7 +167,9 @@ $('#section2 input').click(function() {
 // 포폴 페이지 오픈
 
 
-
+function blockOpen() {
+  win = window.open("http://rien.dothome.co.kr/block","pf","toolbar=no,location=no,status=no,menubar=no,resizable=no,scrollbars=yes,width=400, height=720,left=800,top=150")
+}
 
 
 

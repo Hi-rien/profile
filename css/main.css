@@ -2,6 +2,17 @@
   box-sizing: border-box;
 }
 
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
 @keyframes blink {
   0% {
     opacity: 1;
@@ -10,6 +21,24 @@
   100% {
     opacity: 0;
     transform: scale(0);
+  }
+}
+@-webkit-keyframes shooting {
+  0% {
+    transform: translate(300px, -120px);
+    opacity: 0;
+  }
+  90% {
+    transform: translate(300px, -120px);
+    opacity: 0;
+  }
+  91% {
+    transform: translate(300px, -120px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-1400px, 600px);
+    opacity: 0;
   }
 }
 @keyframes shooting {
@@ -30,6 +59,16 @@
     opacity: 0;
   }
 }
+@-webkit-keyframes line1 {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(23deg);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(1) rotate(23deg);
+  }
+}
 @keyframes line1 {
   0% {
     opacity: 0;
@@ -38,6 +77,16 @@
   100% {
     opacity: 0.5;
     transform: scale(1) rotate(23deg);
+  }
+}
+@-webkit-keyframes line2 {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(114deg);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(1) rotate(114deg);
   }
 }
 @keyframes line2 {
@@ -50,6 +99,16 @@
     transform: scale(1) rotate(114deg);
   }
 }
+@-webkit-keyframes scrollAni {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  100% {
+    opacity: 0.6;
+    transform: translate(-50%, -10px);
+  }
+}
 @keyframes scrollAni {
   0% {
     opacity: 1;
@@ -58,6 +117,17 @@
   100% {
     opacity: 0.6;
     transform: translate(-50%, -10px);
+  }
+}
+@-webkit-keyframes mobile {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }
 @keyframes mobile {
@@ -71,12 +141,28 @@
     transform: rotate(0);
   }
 }
+@-webkit-keyframes percent_css {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
 @keyframes percent_css {
   0% {
     width: 0;
   }
   100% {
     width: 80%;
+  }
+}
+@-webkit-keyframes percent_html {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
   }
 }
 @keyframes percent_html {
@@ -87,12 +173,28 @@
     width: 90%;
   }
 }
+@-webkit-keyframes percent_jq {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
 @keyframes percent_jq {
   0% {
     width: 0;
   }
   100% {
     width: 70%;
+  }
+}
+@-webkit-keyframes percent_js {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
   }
 }
 @keyframes percent_js {
@@ -103,12 +205,28 @@
     width: 60%;
   }
 }
+@-webkit-keyframes percent_php {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
 @keyframes percent_php {
   0% {
     width: 0;
   }
   100% {
     width: 50%;
+  }
+}
+@-webkit-keyframes percent_scss {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
   }
 }
 @keyframes percent_scss {
@@ -119,12 +237,28 @@
     width: 80%;
   }
 }
+@-webkit-keyframes mobileAni1 {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(0, -50%) rotate(45deg);
+  }
+}
 @keyframes mobileAni1 {
   0% {
     transform: translate(-50%, -50%);
   }
   100% {
     transform: translate(0, -50%) rotate(45deg);
+  }
+}
+@-webkit-keyframes mobileAni2 {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(-100%, -50%) rotate(-45deg);
   }
 }
 @keyframes mobileAni2 {
@@ -135,6 +269,14 @@
     transform: translate(-100%, -50%) rotate(-45deg);
   }
 }
+@-webkit-keyframes mobileAni3 {
+  0% {
+    transform: translate(0, -50%) rotate(45deg);
+  }
+  100% {
+    transform: translate(80%, -50%) rotate(0);
+  }
+}
 @keyframes mobileAni3 {
   0% {
     transform: translate(0, -50%) rotate(45deg);
@@ -143,12 +285,30 @@
     transform: translate(80%, -50%) rotate(0);
   }
 }
+@-webkit-keyframes mobileAni4 {
+  0% {
+    transform: translate(-100%, -50%) rotate(-45deg);
+  }
+  100% {
+    transform: translate(-180%, -50%) rotate(0);
+  }
+}
 @keyframes mobileAni4 {
   0% {
     transform: translate(-100%, -50%) rotate(-45deg);
   }
   100% {
     transform: translate(-180%, -50%) rotate(0);
+  }
+}
+@-webkit-keyframes showLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 @keyframes showLeft {
@@ -161,6 +321,16 @@
     transform: translateX(0);
   }
 }
+@-webkit-keyframes showUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @keyframes showUp {
   0% {
     opacity: 0;
@@ -171,6 +341,16 @@
     transform: translateY(0);
   }
 }
+@-webkit-keyframes showUPt {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
 @keyframes showUPt {
   0% {
     opacity: 0;
@@ -179,6 +359,16 @@
   100% {
     opacity: 1;
     transform: translate(-50%, 0);
+  }
+}
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
   }
 }
 body {
@@ -196,7 +386,8 @@ body #shooting_star .scroll {
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
-  animation: scrollAni 1.5s ease-in-out alternate infinite;
+  -webkit-animation: scrollAni 1.5s ease-in-out alternate infinite;
+          animation: scrollAni 1.5s ease-in-out alternate infinite;
 }
 body #shooting_star #typing {
   text-align: center;
@@ -224,62 +415,74 @@ body #shooting_star #typing.active::after {
   display: none;
 }
 body #shooting_star #str14 {
-  animation: blink 1.5s ease-in-out alternate infinite;
+  -webkit-animation: blink 1.5s ease-in-out alternate infinite;
+          animation: blink 1.5s ease-in-out alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str11 {
-  animation: blink 1.5s ease-in-out 1s alternate infinite;
+  -webkit-animation: blink 1.5s ease-in-out 1s alternate infinite;
+          animation: blink 1.5s ease-in-out 1s alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str1 {
-  animation: blink 2s ease-in-out 2s alternate infinite;
+  -webkit-animation: blink 2s ease-in-out 2s alternate infinite;
+          animation: blink 2s ease-in-out 2s alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str15 {
-  animation: blink 2s ease-in-out 0.5s alternate infinite;
+  -webkit-animation: blink 2s ease-in-out 0.5s alternate infinite;
+          animation: blink 2s ease-in-out 0.5s alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str8 {
-  animation: blink 3s ease-in-out 3s alternate infinite;
+  -webkit-animation: blink 3s ease-in-out 3s alternate infinite;
+          animation: blink 3s ease-in-out 3s alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str13 {
-  animation: blink 2s ease-in-out 1s alternate infinite;
+  -webkit-animation: blink 2s ease-in-out 1s alternate infinite;
+          animation: blink 2s ease-in-out 1s alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str5 {
-  animation: blink 3s ease-in-out 1.5s alternate infinite;
+  -webkit-animation: blink 3s ease-in-out 1.5s alternate infinite;
+          animation: blink 3s ease-in-out 1.5s alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str10 {
-  animation: blink 2s ease-in-out 1s alternate infinite;
+  -webkit-animation: blink 2s ease-in-out 1s alternate infinite;
+          animation: blink 2s ease-in-out 1s alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str4 {
-  animation: blink 1.5s ease-in-out 1s alternate infinite;
+  -webkit-animation: blink 1.5s ease-in-out 1s alternate infinite;
+          animation: blink 1.5s ease-in-out 1s alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str3 {
-  animation: blink 1.5s ease-in-out alternate infinite;
+  -webkit-animation: blink 1.5s ease-in-out alternate infinite;
+          animation: blink 1.5s ease-in-out alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str12 {
-  animation: blink 3s ease-in-out alternate infinite;
+  -webkit-animation: blink 3s ease-in-out alternate infinite;
+          animation: blink 3s ease-in-out alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
 body #shooting_star #str2 {
-  animation: blink 3s ease-in-out alternate infinite;
+  -webkit-animation: blink 3s ease-in-out alternate infinite;
+          animation: blink 3s ease-in-out alternate infinite;
   transform-box: fill-box;
   transform-origin: center;
 }
@@ -287,7 +490,8 @@ body #shooting_star #shooting2 {
   opacity: 0;
   transform-box: fill-box;
   transform-origin: center;
-  animation: shooting 6s ease-in-out infinite;
+  -webkit-animation: shooting 6s ease-in-out infinite;
+          animation: shooting 6s ease-in-out infinite;
 }
 body #shooting_star #tree {
   transform-box: fill-box;
@@ -328,9 +532,12 @@ body .section .line {
   background-color: #6947EF;
   position: absolute;
   z-index: -1;
-  animation-timing-function: ease-in-out;
-  animation-duration: 1.5s;
-  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 body #section1 .line.line1 {
   transform: rotate(23deg);
@@ -338,7 +545,8 @@ body #section1 .line.line1 {
   left: -100px;
 }
 body #section1 .line.line1.show {
-  animation-name: line1;
+  -webkit-animation-name: line1;
+          animation-name: line1;
 }
 body #section1 .line.line2 {
   top: 450px;
@@ -346,14 +554,15 @@ body #section1 .line.line2 {
   transform: rotate(114deg);
 }
 body #section1 .line.line2.show {
-  animation-name: line2;
+  -webkit-animation-name: line2;
+          animation-name: line2;
 }
 body #section1 .inner .about_box {
   position: absolute;
   top: 20%;
   right: 8%;
   width: 65%;
-  height: 500px;
+  height: 400px;
   border-radius: 20px;
   background: linear-gradient(0.8turn, #000 0%, #0a0a0a 50%, #000 100%);
   box-shadow: 8px 8px 30px #170C47;
@@ -366,7 +575,7 @@ body #section1 .inner .about_box .inner_box {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 460px;
+  height: 360px;
   width: 95%;
   border-radius: 5px;
   border: 1px solid #6947EF;
@@ -375,7 +584,7 @@ body #section1 .inner .about_box .inner_box {
   padding: 50px;
 }
 body #section1 .inner .about_box .inner_box .hello {
-  font-size: 48px;
+  font-size: 42px;
   letter-spacing: 2px;
 }
 body #section1 .inner .about_box .inner_box .name {
@@ -387,24 +596,26 @@ body #section1 .inner .about_box .inner_box .name span {
   color: #6947EF;
 }
 body #section1 .inner .about_box .inner_box .name.active {
-  animation: showLeft 1.5s ease-in-out both;
+  -webkit-animation: showLeft 1.5s ease-in-out both;
+          animation: showLeft 1.5s ease-in-out both;
 }
 body #section1 .inner .about_box .inner_box .desc {
   font-family: "Roboto";
-  font-size: 20px;
-  line-height: 1.8;
+  font-size: 16px;
+  line-height: 1.6;
   margin-top: 40px;
   margin-left: 20px;
 }
 body #section1 .inner .about_box .inner_box .desc.active {
-  animation: showLeft 1.5s 1s ease-in-out both;
+  -webkit-animation: showLeft 1.5s 1s ease-in-out both;
+          animation: showLeft 1.5s 1s ease-in-out both;
 }
 body #section1 .inner .about_box .inner_box .emoticon_box {
-  width: 170px;
-  height: 170px;
+  width: 130px;
+  height: 130px;
   position: absolute;
-  right: 5%;
-  top: 5%;
+  right: 2%;
+  top: 2%;
 }
 body #section1 .inner .about_box .inner_box .emoticon_box .emoticon {
   position: absolute;
@@ -479,7 +690,8 @@ body #section2 .line3 {
   top: 200px;
 }
 body #section2 .line3.show {
-  animation-name: line1;
+  -webkit-animation-name: line1;
+          animation-name: line1;
 }
 body #section2 .line4 {
   transform: rotate(114deg);
@@ -487,7 +699,8 @@ body #section2 .line4 {
   right: -350px;
 }
 body #section2 .line4.show {
-  animation-name: line2;
+  -webkit-animation-name: line2;
+          animation-name: line2;
 }
 body #section2 .slide_skill {
   width: 100%;
@@ -548,22 +761,28 @@ body #section2 #skillper .percent li p {
   background-color: #6947EF;
 }
 body #section2 #skillper .percent li:nth-child(1) p.start {
-  animation: percent_css 1s ease both;
+  -webkit-animation: percent_css 1s ease both;
+          animation: percent_css 1s ease both;
 }
 body #section2 #skillper .percent li:nth-child(2) p {
-  animation: percent_html 1s ease both;
+  -webkit-animation: percent_html 1s ease both;
+          animation: percent_html 1s ease both;
 }
 body #section2 #skillper .percent li:nth-child(3) p {
-  animation: percent_jq 1s ease both;
+  -webkit-animation: percent_jq 1s ease both;
+          animation: percent_jq 1s ease both;
 }
 body #section2 #skillper .percent li:nth-child(4) p {
-  animation: percent_js 1s ease both;
+  -webkit-animation: percent_js 1s ease both;
+          animation: percent_js 1s ease both;
 }
 body #section2 #skillper .percent li:nth-child(5) p {
-  animation: percent_php 1s ease both;
+  -webkit-animation: percent_php 1s ease both;
+          animation: percent_php 1s ease both;
 }
 body #section2 #skillper .percent li:nth-child(6) p {
-  animation: percent_scss 1s ease both;
+  -webkit-animation: percent_scss 1s ease both;
+          animation: percent_scss 1s ease both;
 }
 body header {
   width: 100%;
@@ -601,13 +820,13 @@ body #section3 .inner #projects .project {
 }
 body #section3 .inner #projects .project .title_box {
   position: relative;
-  width: 630px;
+  width: 100%;
   height: 450px;
   border: 1px solid #eee;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
   background-color: #222;
-  transition: all 1s;
+  transition: all 0.75s;
   cursor: pointer;
 }
 body #section3 .inner #projects .project .title_box h3 {
@@ -623,6 +842,21 @@ body #section3 .inner #projects .project .title_box img {
 body #section3 .inner #projects .project .title_box:hover {
   z-index: 1;
   transform: scale(1.05);
+}
+body #section3 .inner #projects .project .title_box::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  transform: skew(-25deg);
+}
+body #section3 .inner #projects .project .title_box:hover::before {
+  -webkit-animation: shine 0.75s;
+          animation: shine 0.75s;
 }
 body #section3 .inner #projects .project .desc_box {
   font-family: "Roboto";
@@ -681,6 +915,24 @@ body #section3 .inner #projects .project#canon .img3 {
   bottom: 0;
   width: 400px;
 }
+body #section3 .inner #projects .project#books .img1 {
+  width: 180px;
+  position: absolute;
+  left: 20px;
+}
+body #section3 .inner #projects .project#books .img2 {
+  position: absolute;
+  width: 120px;
+  bottom: 0;
+  left: 30%;
+  z-index: 1;
+}
+body #section3 .inner #projects .project#books .img3 {
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  width: 400px;
+}
 body #section3 .inner #projects .project#movie .img1 {
   width: 180px;
   position: absolute;
@@ -721,15 +973,23 @@ body #section3 .inner #projects .project#starbucks .title_box img {
   transform: translateX(-50%);
   width: 450px;
 }
+body #section3 .inner #projects .project#block img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
 body #section4 .edu {
   margin-top: 50px;
   width: 100%;
-  padding: 0 100px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5%;
   font-family: "Roboto";
   color: #fff;
+}
+body #section4 .edu li {
+  width: 100%;
 }
 body #section4 .edu li h5 {
   font-size: 24px;
@@ -738,7 +998,7 @@ body #section4 .edu li h5 {
 }
 body #section4 .edu li .box {
   margin-top: 20px;
-  width: 550px;
+  width: 100%;
   height: 150px;
   border: 1px solid #fff;
   display: flex;
@@ -748,6 +1008,7 @@ body #section4 .edu li .box {
 }
 body #section4 .edu li .box p {
   padding-left: 30px;
+  font-size: 14px;
 }
 body #section5 {
   margin-bottom: 100px;
