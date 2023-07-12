@@ -18,6 +18,7 @@ body {
     position: absolute;
     right: 10%;
     top: 5%;
+    z-index: 9;
   }
 
     #pdf_modal {
@@ -92,11 +93,11 @@ body {
           gap: 100px;
 
           img {
-            width: 200px;
+            width: 160px;
           }
 
           span {
-            font-size: 32px;
+            font-size: 28px;
             font-weight: bold;
           }
         }
@@ -117,7 +118,7 @@ body {
 
             .main_img {
               img {
-                width: 350px;
+                width: 250px;
               }
             }
 
@@ -128,7 +129,7 @@ body {
 
               .sub_name {
                 font-weight: bold;
-                font-size: 32px;
+                font-size: 28px;
                 margin-bottom: 10px;
                 display: flex;
                 align-items: center;
@@ -167,7 +168,7 @@ body {
                   width: 350px;
                   display: flex;
                   flex-wrap: wrap;
-                  font-size: 22px;
+                  font-size: 18px;
                   font-family: "Roboto";
                   column-gap: 50px;
                   font-weight: bold;
@@ -184,7 +185,7 @@ body {
                   margin-left: 20px;
                   color: #333;
                   font-family: "Roboto";
-                  font-size: 22px;
+                  font-size: 18px;
                   font-weight: bold;
                 }
               }
@@ -219,7 +220,7 @@ body {
                 background-color: #f1f1f1;
               }
               img {
-                width: 300px;
+                width: 260px;
                 border-radius: 10px;
                 box-shadow: 3px 3px 6px rgba(0, 0, 0, .4);
                 &:nth-child(odd) {

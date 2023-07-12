@@ -16,6 +16,7 @@ body .close {
   position: absolute;
   right: 10%;
   top: 5%;
+  z-index: 9;
 }
 body #pdf_modal {
   position: fixed;
@@ -85,10 +86,10 @@ body #project .inner .contents header {
   gap: 100px;
 }
 body #project .inner .contents header img {
-  width: 200px;
+  width: 160px;
 }
 body #project .inner .contents header span {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
 }
 body #project .inner .contents .box {
@@ -106,7 +107,7 @@ body #project .inner .contents .box .left {
   gap: 10%;
 }
 body #project .inner .contents .box .left .main_img img {
-  width: 350px;
+  width: 250px;
 }
 body #project .inner .contents .box .left .desc_box {
   display: flex;
@@ -115,7 +116,7 @@ body #project .inner .contents .box .left .desc_box {
 }
 body #project .inner .contents .box .left .desc_box .sub_name {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 28px;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -150,7 +151,7 @@ body #project .inner .contents .box .left .desc_box .skills .skill {
   width: 350px;
   display: flex;
   flex-wrap: wrap;
-  font-size: 22px;
+  font-size: 18px;
   font-family: "Roboto";
   -moz-column-gap: 50px;
        column-gap: 50px;
@@ -164,7 +165,7 @@ body #project .inner .contents .box .left .desc_box .github a {
   margin-left: 20px;
   color: #333;
   font-family: "Roboto";
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
 }
 body #project .inner .contents .box .right {
@@ -193,7 +194,7 @@ body #project .inner .contents .box .right .scroll::-webkit-scrollbar-track {
   background-color: #f1f1f1;
 }
 body #project .inner .contents .box .right .scroll img {
-  width: 300px;
+  width: 260px;
   border-radius: 10px;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }

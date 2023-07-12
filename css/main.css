@@ -979,6 +979,7 @@ body #section3 .inner #projects .project#block img {
   transform: translate(-50%);
 }
 body #section4 .edu {
+  padding: 0 50px;
   margin-top: 50px;
   width: 100%;
   display: flex;
