@@ -73,6 +73,8 @@
 - ## <a style="color:inherit" href="https://hi-rien.github.io/react_movie/">**MoviE's.COM**</a>
   - ### MoviE's.COM 창작 <br>
   - 개인 프로젝트 : "React MINI project"
-  - github : <a style="color:inherit" href="https://github.com/Hi-rien/react_movie">https://github.com/Hi-rien/react_movie</a>
+  - github : <a style="color:inherit" href="https://github.com/Hi-rien/react_movie_NotBuild">https://github.com/Hi-rien/react_movie_NotBuild</a>
   - Demo : <a style="color:inherit" href="https://hi-rien.github.io/react_movie/">https://hi-rien.github.io/react_movie/</a>
+
+
 
