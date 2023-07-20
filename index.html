@@ -16,11 +16,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/cube.css">
 
   <script src="./js/jquery-1.11.2.min.js"></script>
   <script src="./js/waypoints.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script defer src="./js/main.js"></script>
   <title>Rien portfolio</title>
 </head>
@@ -96,7 +98,7 @@
       </nav>
   
       <div id="fixed_git">
-        <a href="https://github.com/Hi-rien" target="_blank"><img src="./img/github_wh.png" alt="깃헙"></a>
+        <a href="https://github.com/Hi-rien/profile" target="_blank"><img src="./img/github_wh.png" alt="깃헙"></a>
       </div>
   
       <div class="inner">
@@ -200,7 +202,7 @@
     <section id="section3" class="section2 event">
       <div class="inner">
         <header>
-          <h2>PROJECT</h2>
+          <h2>PROJECTS</h2>
         </header>
   
         <div id="projects">
@@ -478,12 +480,35 @@
       </header>
 
       <div class="projects">
-        <a href="./uniticket.html" class="project" id="uniticket">
+        <div class="project mobile" id="muniticket">
           <div class="title_box">
-            <h3>Uniticket</h3>
-            <img class="img1" src="./img/uniticket/uniticket_mobile.png" alt="유니티켓 메인">
-            <img class="img2" src="./img/uniticket/reserv1_m.png" alt="유니티켓 상세페이지">
-            <img class="img3" src="./img/uniticket/reserv4_m.png" alt="유니티켓 예매페이지">
+            <div class="front">
+              <h3>Uniticket</h3>
+              <img class="img1" src="./img/uniticket/uniticket_mobile.png" alt="유니티켓 메인">
+              <img class="img2" src="./img/uniticket/reserv1_m.png" alt="유니티켓 상세페이지">
+              <img class="img3" src="./img/uniticket/reserv4_m.png" alt="유니티켓 예매페이지">
+            </div>
+            <div class="back">
+              <img class="logo" src="./img/uniticket/uniticket_logo.png" alt="유니티켓 로고">
+              <ul class="contents">
+                <li class="title">skills
+                  <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Jquery</li>
+                    <li>PHP</li>
+                    <li>Figma</li>
+                    <li>Photoshop</li>
+                  </ul>
+                </li>
+                <li class="title">github
+                  <ul>
+                    <li><a href="https://github.com/Hi-rien/uniticket">https://github.com/Hi-rien/uniticket</a></li>
+                  </ul>
+                </li>
+                <li class="title"><a href="https://rien.dothome.co.kr/uniticket" target="_blank">View</a></li>
+              </ul>
+            </div>
           </div>
           <div class="desc_box">
             <h4>"모두가 하나 되는 티켓팅 어플"</h4>
@@ -493,7 +518,107 @@
               <span>창작</span>
             </div>
           </div>
-        </a>
+        </div>
+        <div class="project responsive" id="mcanon">
+          <div class="title_box">
+            <div class="front">
+              <h3>Canon</h3>
+              <img class="img1" src="./img/canon/canon_mobile01.png" alt="캐논 모바일메인">
+              <img class="img2" src="./img/canon/canon_mobile02.png" alt="캐논 모바일 메인">
+              <img src="./img/canon/canon_pc.png" alt="캐논pc메인" class="img3">
+            </div>
+            <div class="back">
+
+            </div>
+          </div>
+          <div class="desc_box">
+            <h4>"카메라로 보는 세상"</h4>
+            <div class="els">
+              <span>개인 프로젝트</span>
+              <span>Responsive Web</span>
+              <span>리뉴얼</span>
+            </div>
+          </div>
+        </div>
+        <div class="project responsive" id="mmovie">
+          <div class="title_box">
+            <div class="front">
+              <h3>MoviE's.COM</h3>
+              <img class="img1" src="./img/movie/mobile1.png" alt="movie 메인">
+              <img class="img2" src="./img/movie/mobile2.png" alt="movie 상세">
+              <img class="img3" src="./img/movie/pc.png" alt="movie pc">
+            </div>
+            <div class="back">
+
+            </div>
+          </div>
+          <div class="desc_box">
+            <h4>"React mini Project"</h4>
+            <div class="els">
+              <span>개인 프로젝트</span>
+              <span>Responsive Web</span>
+              <span>창작</span>
+            </div>
+          </div>
+        </div>
+        <div class="project responsive" id="mbooks">
+          <div class="title_box">
+            <div class="front">
+              <h3>MoviE's.COM</h3>
+              <img class="img1" src="./img/books/mobile1.png" alt="movie 메인">
+              <img class="img2" src="./img/books/mobile2.png" alt="movie 상세">
+              <img class="img3" src="./img/books/pc.png" alt="movie pc">
+            </div>
+            <div class="back">
+
+            </div>
+          </div>
+          <div class="desc_box">
+            <h4>"React API Project"</h4>
+            <div class="els">
+              <span>개인 프로젝트</span>
+              <span>Responsive Web</span>
+              <span>창작</span>
+            </div>
+          </div>
+        </div>
+        <div class="project mobile" id="mbooks">
+          <div class="title_box">
+            <div class="front">
+              <h3>LUSH</h3>
+              <img class="img1" src="./img/lush/lush_iphone2.png" alt="러쉬메인페이지">
+              <img class="img2" src="./img/lush/lush_iphone.png" alt="러쉬메인페이지">
+              <img class="img3" src="./img/lush/lush_iphone3.png" alt="러쉬메인페이지">
+            </div>
+            <div class="back"></div>
+          </div>
+          <div class="desc_box">
+            <h4>"믿을 수 있는 제품 LUSH"</h4>
+            <div class="els">
+              <span>개인 프로젝트</span>
+              <span>Mobile</span>
+              <span>리뉴얼</span>
+            </div>
+          </div>
+        </div>
+        <div class="project" id="mstarbucks">
+          <div class="title_box">
+            <div class="front">
+              <h3>Starbucks</h3>
+              <img src="./img/starbucks/main.png" alt="">
+            </div>
+            <div class="back"></div>
+          </div>
+          <div class="desc_box">
+            <h4>"Starbucks Korea"</h4>
+            <div class="els">
+              <span>개인 프로젝트</span>
+              <span>PC</span>
+              <span>Clone Coding</span>
+            </div>
+          </div>
+        </div>
+
       </div>
 
 

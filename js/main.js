@@ -175,7 +175,7 @@ function blockOpen() {
 //---------------------------- Mobile
 
 
-// 모바일 skills
+// 모바일 skills card animation
 
 let oldId = null;
 
@@ -220,4 +220,12 @@ $('#msection2').waypoint(function() {
   $('#1').addClass('start')
 }, {
   offset: '75%'
+})
+
+// projects slick
+
+$('#msection3 .projects').slick({
+  infinite: true,
+  variableWidth: true,
+  centerMode: true,
 })

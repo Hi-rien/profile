@@ -1053,6 +1053,9 @@ body #section5 .inner .content_box .right li a {
   body #mobile {
     display: block;
   }
+  body a {
+    color: #fff;
+  }
   body #header {
     width: 100%;
     height: 60px;
@@ -1297,22 +1300,22 @@ body #section5 .inner .content_box .right li a {
     transition: color 0.5s, background-color 0.5s, transform 1s, opacity 0.2s 0.4s;
   }
   body #msection2 .cards-container .card.hidden:nth-of-type(1) {
-    transform: rotate(-36deg) translateX(51%) translateY(-29%) scale(0.3) skewX(10deg) skewY(1deg);
+    transform: rotate(-53deg) translateX(51%) translateY(-19%) scale(0.5) skewX(4deg) skewY(6deg);
   }
   body #msection2 .cards-container .card.hidden:nth-of-type(2) {
-    transform: rotate(-68deg) translateX(51%) translateY(-22%) scale(0.1) skewX(2deg) skewY(2deg);
+    transform: rotate(-45deg) translateX(51%) translateY(-15%) scale(0.3) skewX(9deg) skewY(4deg);
   }
   body #msection2 .cards-container .card.hidden:nth-of-type(3) {
-    transform: rotate(-27deg) translateX(51%) translateY(-28%) scale(0.3) skewX(11deg) skewY(8deg);
+    transform: rotate(-38deg) translateX(51%) translateY(-16%) scale(0.5) skewX(10deg) skewY(9deg);
   }
   body #msection2 .cards-container .card.hidden:nth-of-type(4) {
-    transform: rotate(-5deg) translateX(51%) translateY(-26%) scale(0.4) skewX(3deg) skewY(5deg);
+    transform: rotate(-53deg) translateX(51%) translateY(-26%) scale(0.5) skewX(7deg) skewY(4deg);
   }
   body #msection2 .cards-container .card.hidden:nth-of-type(5) {
-    transform: rotate(-39deg) translateX(51%) translateY(-4%) scale(0.5) skewX(5deg) skewY(2deg);
+    transform: rotate(-97deg) translateX(51%) translateY(-13%) scale(0.2) skewX(12deg) skewY(5deg);
   }
   body #msection2 .cards-container .card.hidden:nth-of-type(6) {
-    transform: rotate(-1deg) translateX(51%) translateY(-19%) scale(0.5) skewX(3deg) skewY(8deg);
+    transform: rotate(-55deg) translateX(51%) translateY(-3%) scale(0.4) skewX(3deg) skewY(10deg);
   }
   body #msection2 .cards-container .card:nth-of-type(1) {
     transform: translateX(0px) translateY(0px);
@@ -1352,6 +1355,24 @@ body #section5 .inner .content_box .right li a {
     width: 90%;
     margin: 50px auto 0;
   }
+  body #msection3 .projects .slick-arrow {
+    position: absolute;
+    bottom: -70px;
+    border: none;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    background-image: url("../img/arrow-down.png");
+  }
+  body #msection3 .projects .slick-arrow.slick-prev {
+    left: 0;
+    transform: rotate(90deg);
+  }
+  body #msection3 .projects .slick-arrow.slick-next {
+    right: 0;
+    transform: rotate(-90deg);
+  }
   body #msection3 .projects .project {
     width: 320px;
     margin: 0 auto;
@@ -1363,24 +1384,87 @@ body #section5 .inner .content_box .right li a {
     gap: 30px;
     color: #fff;
     text-align: center;
+    margin: 0 20px;
   }
   body #msection3 .projects .project .title_box {
     width: 100%;
     height: 280px;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    perspective: 800px;
+  }
+  body #msection3 .projects .project .title_box .front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
     border: 1px solid #fff;
     border-radius: 10px 10px 0 0;
-    background-color: #222;
-    position: relative;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    z-index: 1;
     overflow: hidden;
   }
-  body #msection3 .projects .project .title_box h3 {
+  body #msection3 .projects .project .title_box .front h3 {
     font-size: 24px;
     margin-top: 20px;
     font-weight: normal;
   }
-  body #msection3 .projects .project .title_box img {
-    width: 130px;
+  body #msection3 .projects .project .title_box .front img {
     position: absolute;
+  }
+  body #msection3 .projects .project .title_box .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    border: 1px solid #fff;
+    border-radius: 10px 10px 0 0;
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    transition: all 1s;
+    color: #333;
+  }
+  body #msection3 .projects .project .title_box .back a {
+    color: #333;
+  }
+  body #msection3 .projects .project .title_box .back .logo {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  body #msection3 .projects .project .title_box .back .contents {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 30px;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+  }
+  body #msection3 .projects .project .title_box .back .contents .title ul {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+    row-gap: 10px;
+    font-family: "Roboto";
+    font-size: 12px;
+  }
+  body #msection3 .projects .project .title_box:hover .front {
+    transform: rotateY(-180deg);
+  }
+  body #msection3 .projects .project .title_box:hover .back {
+    transform: rotateY(0);
+    z-index: 2;
   }
   body #msection3 .projects .project .desc_box {
     width: 100%;
@@ -1399,17 +1483,43 @@ body #section5 .inner .content_box .right li a {
     justify-content: space-between;
     padding: 0 10px;
   }
-  body #msection3 .projects .project#uniticket .img1 {
+  body #msection3 .projects .project.mobile img {
+    width: 130px;
+  }
+  body #msection3 .projects .project.mobile .img1 {
     right: 10px;
     top: 80px;
   }
-  body #msection3 .projects .project#uniticket .img2 {
+  body #msection3 .projects .project.mobile .img2 {
     left: 10px;
     top: 60px;
   }
-  body #msection3 .projects .project#uniticket .img3 {
+  body #msection3 .projects .project.mobile .img3 {
     left: 50%;
     top: 100px;
+    transform: translateX(-50%);
+  }
+  body #msection3 .projects .project.responsive .img1 {
+    width: 100px;
+    left: 10px;
+    bottom: 0;
+    z-index: 1;
+  }
+  body #msection3 .projects .project.responsive .img2 {
+    width: 70px;
+    bottom: 0;
+    left: 80px;
+    z-index: 1;
+  }
+  body #msection3 .projects .project.responsive .img3 {
+    width: 250px;
+    right: -10px;
+    bottom: 0;
+  }
+  body #msection3 .projects .project#mstarbucks img {
+    width: 250px;
+    bottom: 0;
+    left: 50%;
     transform: translateX(-50%);
   }
 }/*# sourceMappingURL=main.css.map */

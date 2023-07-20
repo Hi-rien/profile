@@ -1058,6 +1058,10 @@ body {
 
     color: #fff;
 
+    a {
+      color: #fff;
+    }
+
     #header {
       width: 100%;
       height: 60px;
@@ -1391,6 +1395,25 @@ body {
       .projects {
         width: 90%;
         margin: 50px auto 0;
+
+        .slick-arrow {
+          position: absolute;
+          bottom: -70px;
+          border: none;
+          font-size: 0;
+          width: 50px;
+          height: 50px;
+          background-color: transparent;
+          background-image: url('../img/arrow-down.png');
+          &.slick-prev {
+            left: 0;
+            transform: rotate(90deg);
+          }
+          &.slick-next {
+            right: 0;
+            transform: rotate(-90deg);
+          }
+        }
         .project {
           width: 320px;
           margin: 0 auto;
@@ -1402,22 +1425,87 @@ body {
           gap: 30px;
           color: #fff;
           text-align: center;
+          margin: 0 20px;
           .title_box {
             width: 100%;
             height: 280px;
-            border: 1px solid #fff;
             border-radius: 10px 10px 0 0;
-            background-color: #222;
             position: relative;
-            overflow: hidden;
-            h3 {
-              font-size: 24px;
-              margin-top: 20px;
-              font-weight: normal;
-            }
-            img {
-              width: 130px;
+            perspective: 800px;
+            .front {
               position: absolute;
+              width: 100%;
+              height: 100%;
+              background-color: #222;
+              border: 1px solid #fff;
+              border-radius: 10px 10px 0 0;
+              top: 0;
+              left: 0;
+              transition: all 1s;
+              backface-visibility: hidden;
+              z-index: 1;
+              overflow: hidden;
+              h3 {
+                font-size: 24px;
+                margin-top: 20px;
+                font-weight: normal;
+              }
+              img {
+                position: absolute;
+              }
+            }
+            .back {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: #eee;
+              border: 1px solid #fff;
+              border-radius: 10px 10px 0 0;
+              transform: rotateY(180deg);
+              backface-visibility: hidden;
+              transition: all 1s;
+              color: #333;
+              a {
+                color: #333;
+              }
+              .logo {
+                width: 100px;
+                position: absolute;
+                top: 0;
+                left: 0;
+              }
+              .contents {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                gap: 30px;
+                position: absolute;
+                top: 50px;
+                left: 20px;
+                .title {
+                  ul {
+                    margin-top: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    column-gap: 50px;
+                    row-gap: 10px;
+                    font-family: "Roboto";
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+
+            &:hover {
+              .front {
+                transform: rotateY(-180deg);
+              }
+              .back {
+                transform: rotateY(0);
+                z-index: 2;
+              }
             }
           }
           .desc_box {
@@ -1437,8 +1525,10 @@ body {
               padding: 0 10px;
             }
           }
-
-          &#uniticket {
+          &.mobile {
+            img {
+              width: 130px;
+            }
             .img1 {
               right: 10px;
               top: 80px;
@@ -1450,6 +1540,34 @@ body {
             .img3 {
               left: 50%;
               top: 100px;
+              transform: translateX(-50%);
+            }
+          }
+
+          &.responsive {
+            .img1 {
+              width: 100px;
+              left: 10px;
+              bottom: 0;
+              z-index: 1;
+            }
+            .img2 {
+              width: 70px;
+              bottom: 0;
+              left: 80px;
+              z-index: 1;
+            }
+            .img3 {
+              width: 250px;
+              right: -10px;
+              bottom: 0;
+            }
+          }
+          &#mstarbucks {
+            img {
+              width: 250px;
+              bottom: 0;
+              left: 50%;
               transform: translateX(-50%);
             }
           }
