@@ -3,17 +3,19 @@
 
 let target = document.getElementById('typing')
 
+// 타이핑 작성 속도를 랜덤으로 만들기
 function random(limit) {
   return Math.trunc(Math.random() * limit + 1)
 }
 
+// 커서 깜빡임 효과
 function blink() {
   target.classList.toggle('active')
 }
 
 setInterval(blink, 400)
 
-
+// 타이핑 문장 split으로 쪼개서 return
 function string() {
   let stringArr = ["This is just my beginning."]
   let selecArr = stringArr[0].split("")
@@ -21,14 +23,18 @@ function string() {
   return selecArr
 }
 
+// 모든 글자 타이핑 완료시 전부 지우고 typing 함수 재실행
 function resetTyping() {
   target.textContent = ""
 
   typing(string())
 }
 
+// typing 실행 함수
 function typing(arr) {
   if (arr.length > 0) {
+      // 함수 호출 시 받은 문자 배열이 존재 한다면 target요소에 한글자씩 받은 문자를 입력
+      // setTimeout로 typing함수를 재호출
     target.textContent += arr.shift()
     setTimeout(function () {
       typing(arr)
@@ -40,6 +46,7 @@ function typing(arr) {
   }
 }
 
+// typing함수 호출 string()함수에 받은 글자 배열을 인수로 전달
 setTimeout(function() {
   typing(string())
 
@@ -174,6 +181,16 @@ function blockOpen() {
 
 //---------------------------- Mobile
 
+// 첫페이지 화살표 다음 섹션으로
+
+$('#msection1 .arrow').click(function() {
+  const nextSec = $('#msection2').offset().top
+
+  $('html, body').animate({
+    scrollTop: nextSec - 80
+  }, 1000)
+})
+
 
 // 모바일 skills card animation
 
@@ -212,7 +229,6 @@ $('.tabs-controls__link').click(function(e) {
   oldId = currentId;
 
   let aniIndex = $(this).data('id')
-  console.log(aniIndex)
   $(`.cards-container #${aniIndex}`).addClass('start').siblings().removeClass('start')
 });
 

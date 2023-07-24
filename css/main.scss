@@ -488,26 +488,21 @@ body {
               animation: showLeft 1.5s ease-in-out both;
             }
           }
-
           .desc {
             font-family: "Roboto";
             font-size: 16px;
             line-height: 1.6;
-            margin-top: 40px;
-            margin-left: 20px;
-
+            margin: 40px 20px 0 0;
             &.active {
               animation: showLeft 1.5s 1s ease-in-out both;
             }
           }
-
           .emoticon_box {
             width: 130px;
             height: 130px;
             position: absolute;
             right: 2%;
             top: 2%;
-
             .emoticon {
               position: absolute;
               top: 0;
@@ -1223,12 +1218,12 @@ body {
         position: relative;
         z-index: 10;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: stretch;
         width: 100%;
         max-width: 500px;
         margin: 0 auto;
-        padding: 10px 0 20px;
+        padding: 10px 20px;
 
         .tabs-controls__link {
           position: relative;
@@ -1236,7 +1231,7 @@ body {
           color: #fff;
           font-family: "Roboto";
           font-size: 12px;
-          padding: 10px;
+          padding: 5px;
 
           &::after {
             position: absolute;
@@ -1265,7 +1260,7 @@ body {
         position: relative;
         z-index: 1;
         width: 200px;
-        margin: 10% auto 0;
+        margin: 15% auto 0;
         .card {
           position: absolute;
           width: 200px;
@@ -1379,14 +1374,6 @@ body {
         }
       }
 
-      .desc {
-        width: 100%;
-        position: absolute;
-        bottom: 10%;
-        text-align: center;
-        font-family: 'Roboto';
-      }
-
     }
 
     #msection3 {
@@ -1473,8 +1460,8 @@ body {
               .logo {
                 width: 100px;
                 position: absolute;
-                top: 0;
-                left: 0;
+                top: 10px;
+                left: 10px;
               }
               .contents {
                 display: flex;
@@ -1571,11 +1558,96 @@ body {
               transform: translateX(-50%);
             }
           }
+          &#mmovie {
+            .back {
+              p {
+                text-align: left;
+                color: #EBAE13;
+                span {
+                  color: #000;
+                }
+              }
+            }
+          }
+          &#mbooks {
+            .back {
+              .logo {
+                width: 30px;
+              }
+            }
+          }
+          &#mlush {
+            .back {
+              .logo {
+                width: 50px;
+              }
+            }
+          }
         }
       }
     }
 
-    #msection4 {}
+    #msection4 {
+      height: auto;
+      .edu {
+        width: 90%;
+        margin: 50px auto;
+        font-family: "Roboto";
+        h3 {
+          font-size: 16px;
+        }
+        .desc_box {
+          width: 100%;
+          margin-top: 20px;
+          border: 1px solid #fff;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 10px;
+          padding: 20px 0;
+          padding-left: 1%;
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    #msection5 {
+      height: auto;
+      margin: 50px 0;
+      .thank_box {
+        font-family: "Roboto";
+        width: 90%;
+        margin: 0 auto;
+        border: 1px solid #fff;
+        padding: 20px;
+        p {
+          font-weight: bold;
+          font-size: 20px;
+          text-align: center;
+        }
+        .info {
+          width: 90%;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          margin-top: 50px;
+          gap: 20px;
+          li {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            img {
+              width: 25px;
+            }
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
 
   }
 
