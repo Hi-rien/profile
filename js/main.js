@@ -181,6 +181,35 @@ function blockOpen() {
 
 //---------------------------- Mobile
 
+// 햄버거 메뉴
+
+$('#header .hamburger').click(function() {
+  $(this).find('p').toggleClass('active')
+  $('#ham_menu').stop().fadeToggle()
+
+  if($('.hamburger p').hasClass('active')) {
+    $('body').css({
+      overflow: 'hidden'
+    })
+  } else {
+    $('body').css({
+      overflow: 'auto'
+    })
+  }
+})
+
+// menu 클릭시 해당 섹션으로 이동
+
+$('#ham_menu li').click(function() {
+  let i = $(this).index() + 1
+  $('.hamburger p').removeClass('active')
+  $('#ham_menu').stop().fadeOut()
+
+  $('html,body').animate({
+    scrollTop: $(`#msection${i}`).offset().top - 80
+  }, 1000)
+})
+
 // 첫페이지 화살표 다음 섹션으로
 
 $('#msection1 .arrow').click(function() {
