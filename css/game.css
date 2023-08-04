@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+body a {
+  color: #fff;
+  display: block;
+}
+body h1 {
+  color: #000;
+  text-shadow: 0 0 2px #fff;
+  letter-spacing: 10px;
+  font-size: 60px;
+  text-align: center;
+  margin: 50px;
+}
+body #games {
+  width: 90%;
+  margin: 100px auto 0;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+body #games .game {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+body #games .game img {
+  width: 250px;
+}
+body #games .game .contents {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+body #games .game .contents h2 {
+  font-size: 32px;
+}
+body #games .game .contents .line {
+  width: 300px;
+  height: 5px;
+  background-color: #fff;
+}
+body #games .game .contents .skill {
+  display: flex;
+  flex-direction: column;
+}
+body #games .game .contents a {
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+body #games .game .contents a img {
+  width: 40px;
+}
+body #games .game .gameImg {
+  transition: all 1s;
+}
+body #games .game .gameImg:hover {
+  transform: scale(1.07);
+}/*# sourceMappingURL=game.css.map */

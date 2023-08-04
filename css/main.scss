@@ -952,11 +952,23 @@ body {
             }
           }
 
-          &#block {
-            img {
+          &#shooting {
+            .img1 {
               position: absolute;
               left: 50%;
-              transform: translate(-50%);
+              top: 40%;
+              transform: translateX(-50%);
+              z-index: 1;
+            }
+
+            .img2 {
+              position: absolute;
+              left: 12%;
+            }
+
+            .img3 {
+              position: absolute;
+              right: 12%;
             }
           }
         }
